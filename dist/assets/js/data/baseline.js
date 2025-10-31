@@ -2,8 +2,6 @@ export const baselineData = {
   accentColor: {
     status: "limited",
     name: "accent-color",
-    description:
-      "The accent-color CSS property sets a color for checkboxes, radio buttons, and other form controls.",
     remark:
       "Chrome on Android and Safari do not maintain minimum contrast for legibility",
     support: {
@@ -54,8 +52,6 @@ export const baselineData = {
   mediaQueriesRangeSyntax: {
     status: "widely",
     name: "Media Queries Range Syntax",
-    description:
-      "The media queries range syntax allows authors to express ranges of values for media features in CSS media queries.",
     support: {
       chrome: {
         name: "Chrome",
@@ -104,8 +100,6 @@ export const baselineData = {
   containerQueries: {
     status: "widely",
     name: "Container Queries",
-    description:
-      "Container Queries allow CSS to apply styles to elements based on the size of their container, rather than the size of the viewport.",
     support: {
       chrome: {
         name: "Chrome",
@@ -154,8 +148,6 @@ export const baselineData = {
   cascadeLayers: {
     status: "widely",
     name: "Cascade Layers",
-    description:
-      "Cascade Layers allow authors to define layers in CSS, providing a way to control the cascade and manage specificity.",
     support: {
       chrome: {
         name: "Chrome",
@@ -204,8 +196,6 @@ export const baselineData = {
   colorScheme: {
     status: "widely",
     name: "color-scheme",
-    description:
-      "The color-scheme CSS property allows an element to indicate which color schemes it can comfortably be rendered in.",
     support: {
       chrome: {
         name: "Chrome",
@@ -254,8 +244,6 @@ export const baselineData = {
   dialog: {
     status: "widely",
     name: "dialog",
-    description:
-      "The HTML dialogelement represents a dialog box or other interactive component, such as an inspector or window.",
     support: {
       chrome: {
         name: "Chrome",
@@ -304,8 +292,6 @@ export const baselineData = {
   crossDocumentViewTransitions: {
     status: "limited",
     name: "Cross-document View Transitions",
-    description:
-      "The View Transitions API enables seamless visual transitions during navigation between pages.",
     support: {
       chrome: {
         name: "Chrome",
@@ -350,8 +336,6 @@ export const baselineData = {
   registeredCustomProperties: {
     status: "newly",
     name: "Registered Custom Properties",
-    description:
-      "Registered Custom Properties (also known as CSS Variables) allow developers to define and use custom properties in CSS with specific syntax and behavior.",
     support: {
       chrome: {
         name: "Chrome",
@@ -400,8 +384,6 @@ export const baselineData = {
   mutuallyExclusiveDetailsElements: {
     status: "newly",
     name: "Mutually Exclusive Details Elements",
-    description:
-      "Mutually Exclusive Details Elements allow only one details element to be open at a time within a specified container.",
     support: {
       chrome: {
         name: "Chrome",
@@ -450,8 +432,6 @@ export const baselineData = {
   textWrapBalance: {
     status: "newly",
     name: "Text Wrap Balance",
-    description:
-      "The text-wrap: balance; CSS property allows for balanced line wrapping in text content, improving readability by distributing text evenly across lines.",
     support: {
       chrome: {
         name: "Chrome",
@@ -500,8 +480,6 @@ export const baselineData = {
   textWrapPretty: {
     status: "limited",
     name: "Text Wrap Pretty",
-    description:
-      "The text-wrap: pretty; CSS property enables improved text wrapping by considering word boundaries and punctuation for better readability.",
     support: {
       chrome: {
         name: "Chrome",
@@ -546,8 +524,6 @@ export const baselineData = {
   colorMix: {
     status: "newly",
     name: "color-mix()",
-    description:
-      "The color-mix() CSS function allows developers to blend two colors together in a specified color space.",
     support: {
       chrome: {
         name: "Chrome",
@@ -596,8 +572,6 @@ export const baselineData = {
   colorSpaces: {
     status: "newly",
     name: "Color Spaces",
-    description:
-      "Support for modern color spaces in CSS, allowing for more accurate and vibrant color representation.",
     support: {
       chrome: {
         name: "Chrome",
@@ -646,8 +620,6 @@ export const baselineData = {
   relativeColors: {
     status: "newly",
     name: "Relative Colors",
-    description:
-      "Support for relative color keywords in CSS, allowing colors to adapt based on the surrounding context.",
     support: {
       chrome: {
         name: "Chrome",
@@ -696,8 +668,6 @@ export const baselineData = {
   popover: {
     status: "newly",
     name: "popover",
-    description:
-      "The HTML popover element represents a pop-up box that appears upon user interaction, providing additional information or options.",
     support: {
       chrome: {
         name: "Chrome",
@@ -746,8 +716,6 @@ export const baselineData = {
   alignContentBlockLayouts: {
     status: "newly",
     name: "Align Content in Block Layouts",
-    description:
-      "Support for the align-content property in block-level layouts, allowing better control over content alignment within containers.",
     support: {
       chrome: {
         name: "Chrome",
@@ -796,8 +764,6 @@ export const baselineData = {
   backdropFilter: {
     status: "newly",
     name: "backdrop-filter",
-    description:
-      "The backdrop-filter CSS property applies graphical effects such as blurring or color shifting to the area behind an element.",
     support: {
       chrome: {
         name: "Chrome",
@@ -846,8 +812,6 @@ export const baselineData = {
   fieldSizing: {
     status: "limited",
     name: "Field Sizing",
-    description:
-      "The field-sizing CSS property allows developers to control the size of form fields based on their content and context.",
     support: {
       chrome: {
         name: "Chrome",
