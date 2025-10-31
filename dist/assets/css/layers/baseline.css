@@ -1,0 +1,101 @@
+.support {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 8px;
+  padding: 0;
+}
+
+.feature-component {
+  font-size: 0.9rem;
+  padding: 0.5rem 0.5rem 0.5rem 1.25rem;
+  border: none;
+  background-position: -1rem center;
+  background-size: 5rem;
+  background-blend-mode: overlay;
+  display: block;
+  background-repeat: no-repeat;
+  color: #060606;
+}
+
+.full-support {
+  background-color: #d4edda;
+}
+
+.partial-support {
+  background-color: #fff3cd;
+}
+
+.no-support {
+  background-color: #f8d7da;
+}
+
+.date {
+  font-size: 0.75rem;
+  display: block;
+  line-height: 1.75;
+}
+
+.chrome {
+  background-image: url("../../img/chrome.svg");
+}
+
+.chromeAndroid {
+  background-image: url("../../img/chrome.svg"), url("../../img/android.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: -1rem center, right 4px center;
+  background-size: 5rem, 1.75rem;
+}
+
+.firefox {
+  background-image: url("../../img/firefox.svg");
+}
+
+.firefoxAndroid {
+  background-image: url("../../img/firefox.svg"), url("../../img/android.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: -1rem center, right 4px center;
+  background-size: 5rem, 1.75rem;
+}
+
+.edge {
+  background-image: url("../../img/edge.svg");
+}
+
+.safari {
+  background-image: url("../../img/safari.svg");
+}
+
+.safariIOS {
+  background-image: url("../../img/safari.svg"), url("../../img/ios.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: -1rem center, right 8px center;
+  background-size: 5rem, 1.75rem;
+}
+
+.baseline {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #060606;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.5rem 0.5rem 3rem;
+  border: none;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 0.5rem center;
+  background-color: #f1f3f4;
+  background-blend-mode: normal;
+  padding-inline-start: 4rem;
+  background-size: 3rem;
+  align-content: center;
+}
+
+.limited {
+  background-image: url("../../img/limited.svg");
+}
+
+.newly {
+  background-image: url("../../img/newly.svg");
+}
+
+.widely {
+  background-image: url("../../img/widely.svg");
+}

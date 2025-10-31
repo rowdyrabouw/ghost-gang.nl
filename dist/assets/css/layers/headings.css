@@ -1,0 +1,9 @@
+h1 {
+  font-family: "PressStart2P", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+  color: white;
+  text-shadow: 0 0 7px #ed2024, 0 0 10px #ed2024, 0 0 21px #ed2024,
+    0 0 42px #0fa;
+}

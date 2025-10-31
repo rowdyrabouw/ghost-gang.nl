@@ -1,0 +1,14 @@
+:root {
+  color-scheme: light dark;
+}
+
+@font-face {
+  font-family: "PressStart2P";
+  src: url("../../fonts/pressstart2p.woff2") format("woff2");
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: light-dark(#060606, #f1f3f4);
+  background-color: light-dark(#f1f3f4, #060606);
+}

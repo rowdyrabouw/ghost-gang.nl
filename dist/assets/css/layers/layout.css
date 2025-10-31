@@ -1,0 +1,28 @@
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  row-gap: 2rem;
+  overflow: hidden;
+}
+
+header {
+  grid-row: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block-start: 1rem;
+  img {
+    margin-inline: 1rem;
+  }
+}
+
+main {
+  grid-row: 2;
+  overflow: auto;
+  padding-block-end: 2rem;
+}
+
+footer {
+  grid-row: 3;
+}
