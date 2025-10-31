@@ -525,8 +525,8 @@ export const baselineData = {
         name: "Firefox",
         level: "no",
       },
-      firefox: {
-        name: "Firefox",
+      firefoxAndroid: {
+        name: "Firefox Android",
         level: "no",
       },
       safari: {

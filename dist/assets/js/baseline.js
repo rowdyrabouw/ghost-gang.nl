@@ -60,7 +60,7 @@ export class Baseline extends HTMLElement {
             (level) => level.status === featureData.status
           ).text
         : "unknown";
-      this.innerHTML = `<footer>${featureData.name}<!--<p>${featureData.description}</p>--><ul class="support"><li class="baseline ${featureData.status}">${availability}</li>${supportHTML}</ul></footer>`;
+      this.innerHTML = `<footer><ul class="support"><li class="baseline ${featureData.status}">${availability}</li>${supportHTML}</ul></footer>`;
     }
   }
 }

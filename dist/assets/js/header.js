@@ -35,6 +35,8 @@ export class Header extends HTMLElement {
     const nextItem = navigationData[currentIndex + 1];
     const totalPages = navigationData[currentIndex].pages;
 
+    window.document.title = featureData.title;
+
     let previousLink;
     if (page === "1" && prevItem) {
       previousLink = `<a href="/${prevItem.name}/index1.html" id="previous"><img src="/assets/img/blinky-left.svg" alt="Previous" width="32px"/></a>`;
