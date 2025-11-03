@@ -11,7 +11,22 @@
   <body>
     <gg-header feature="containerQueries" page="3"></gg-header>
 
-    <main></main>
+    <main>
+      <pre class="hide"><code class="language-css">
+/* define a container */
+
+.card {
+  container: inline-size;
+}
+
+
+@container (min-width: 37.5rem) {
+
+/* apply some styles */
+
+}
+</code></pre>
+    </main>
 
     <gg-baseline feature="containerQueries"></gg-baseline>
   </body>

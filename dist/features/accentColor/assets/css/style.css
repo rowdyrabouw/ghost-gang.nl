@@ -1,0 +1,36 @@
+main div {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  font-size: 1.25rem;
+  margin-block: 1rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  height: 30px;
+  width: 30px;
+}
+
+input[type="range"] {
+  width: 200px;
+  height: 40px;
+}
+
+progress {
+  width: 200px;
+  height: 40px;
+}
+
+input[type="color"] {
+  margin: 0 auto;
+
+  display: block;
+  margin-block-start: 2rem;
+}

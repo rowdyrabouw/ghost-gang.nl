@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ghost Gang</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      :root {
+        accent-color: var(--accent, hsl(174 38% 64%));
+      }
+    </style>
+  </head>
+  <body>
+    <gg-header feature="accentColor" page="3"></gg-header>
+
+    <main>
+      <div>
+        <label>
+          Checkbox
+          <input type="checkbox" checked />
+        </label>
+
+        <label>
+          Radio
+          <input type="radio" checked />
+        </label>
+
+        <label>
+          Range slider
+          <input type="range" min="0" max="100" value="45" />
+        </label>
+
+        <label>
+          Progress element
+          <progress max="100" value="70"></progress>
+        </label>
+        <input type="color" id="accent" />
+      </div>
+    </main>
+
+    <gg-baseline feature="accentColor"></gg-baseline>
+    <script>
+      accent.oninput = (e) =>
+        document.firstElementChild.style.setProperty(
+          "--accent",
+          e.target.value
+        );
+    </script>
+  </body>
+</html>

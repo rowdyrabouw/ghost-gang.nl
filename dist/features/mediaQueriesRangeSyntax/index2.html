@@ -11,7 +11,29 @@
   <body>
     <gg-header feature="mediaQueriesRangeSyntax" page="2"></gg-header>
 
-    <main></main>
+    <main>
+      <pre class="hide"><code class="language-css">
+/* when the browser window is at least 600px and above */
+
+@media (width => 37.5rem) {
+  .element {
+
+    /* apply some styles */
+  
+  }
+}
+
+/* when the browser window is between 320px and 768px */
+
+@media (20rem < width < 48rem) {
+  .element {
+
+    /* apply some styles */
+
+  }
+}
+    </code></pre>
+    </main>
 
     <gg-baseline feature="mediaQueriesRangeSyntax"></gg-baseline>
   </body>
