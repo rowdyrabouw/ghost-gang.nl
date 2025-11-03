@@ -849,4 +849,52 @@ export const baselineData = {
       },
     },
   },
+  nesting: {
+    status: "newly",
+    name: "Nesting",
+    support: {
+      chrome: {
+        name: "Chrome",
+        level: "full",
+        version: 120,
+        date: "2023-12-05",
+      },
+      chromeAndroid: {
+        name: "Chrome Android",
+        level: "full",
+        version: 120,
+        date: "2023-12-05",
+      },
+      edge: {
+        name: "Edge",
+        level: "full",
+        version: 120,
+        date: "2023-12-07",
+      },
+      firefox: {
+        name: "Firefox",
+        level: "full",
+        version: 117,
+        date: "2023-12-07",
+      },
+      firefoxAndroid: {
+        name: "Firefox Android",
+        level: "full",
+        version: 117,
+        date: "2023-12-07",
+      },
+      safari: {
+        name: "Safari",
+        level: "full",
+        version: 17.2,
+        date: "2023-12-11",
+      },
+      safariIOS: {
+        name: "Safari iOS",
+        level: "full",
+        version: 17.2,
+        date: "2023-12-11",
+      },
+    },
+  },
 };

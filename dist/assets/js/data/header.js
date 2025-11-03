@@ -1,7 +1,7 @@
 export const headerData = {
   navigation: [
     { name: "accentColor", pages: 3 },
-    { name: "mediaQueriesRangeSyntax", pages: 3 },
+    { name: "mediaQueriesRangeSyntax", pages: 2 },
     { name: "containerQueries", pages: 3 },
     { name: "cascadeLayers", pages: 3 },
     { name: "colorScheme", pages: 3 },
@@ -18,6 +18,7 @@ export const headerData = {
     { name: "alignContentBlockLayouts", pages: 3 },
     { name: "backdropFilter", pages: 3 },
     { name: "fieldSizing", pages: 3 },
+    { name: "nesting", pages: 3 },
   ],
   features: {
     accentColor: {
@@ -109,6 +110,11 @@ export const headerData = {
       title: "Field Sizing",
       description:
         "Field Sizing in CSS provides a way to control the size and layout of form fields, ensuring a consistent and user-friendly input experience.",
+    },
+    nesting: {
+      title: "Nesting",
+      description:
+        "Nesting in CSS allows developers to write nested rules within a parent rule, improving code organization and readability by reflecting the HTML structure more closely.",
     },
   },
 };
