@@ -5,13 +5,13 @@ code {
 }
 
 pre code.hljs {
-  display: block;
   overflow-x: auto;
-  padding: 1em;
 }
+
 code.hljs {
   padding: 3px 5px;
 }
+
 /*!
   Theme: Gruvbox dark, hard
   Author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
@@ -48,7 +48,7 @@ base0F  #d65d0e  Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php 
 pre code.hljs {
   display: block;
   overflow-x: auto;
-  padding: 1em;
+  padding: 0 1.5rem;
 }
 code.hljs {
   padding: 3px 5px;

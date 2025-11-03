@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Joystix";
+  src: url("../../fonts/joystix.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Namco";
+  src: url("../../fonts/namco.woff2") format("woff2");
+}

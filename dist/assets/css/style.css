@@ -1,8 +1,10 @@
-@layer highlight, base, layout, headings, baseline, utilities;
+@layer highlight, fonts, base, layout, header, headings, baseline, utilities;
 
 @import "layers/highlight.css" layer(highlight);
+@import "layers/fonts.css" layer(fonts);
 @import "layers/base.css" layer(base);
 @import "layers/layout.css" layer(layout);
+@import "layers/header.css" layer(header);
 @import "layers/headings.css" layer(headings);
 @import "layers/baseline.css" layer(baseline);
 @import "layers/utilities.css" layer(utilities);

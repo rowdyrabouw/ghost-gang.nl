@@ -13,7 +13,8 @@ header {
   align-items: center;
   padding-block-start: 1rem;
   img {
-    margin-inline: 1rem;
+    margin-inline: 2rem;
+    margin-block-start: 6px;
   }
 }
 
