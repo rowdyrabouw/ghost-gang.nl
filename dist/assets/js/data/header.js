@@ -9,7 +9,7 @@ export const headerData = {
     { name: "colorSpaces", pages: 2 },
     { name: "containerQueries", pages: 5 },
     { name: "crossDocumentViewTransitions", pages: 12 },
-    { name: "dialog", pages: 3 },
+    { name: "dialog", pages: 5 },
     { name: "fieldSizing", pages: 3 },
     { name: "mediaQueriesRangeSyntax", pages: 2 },
     { name: "mutuallyExclusiveDetailsElements", pages: 3 },

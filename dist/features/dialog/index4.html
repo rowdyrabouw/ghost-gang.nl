@@ -11,6 +11,16 @@
     <style>
       dialog {
         padding: 1.5rem;
+        border-radius: 4px;
+        &::backdrop {
+          background: linear-gradient(
+            to right bottom in oklch,
+            color(display-p3 0.746 0.214 0.18 / 0.6),
+            color(display-p3 0.933 0.536 0.215 / 0.6),
+            color(display-p3 0.933 0.691 0.717 / 0.6),
+            color(display-p3 0.455 0.759 0.789 / 0.6)
+          );
+        }
         & button {
           margin-left: auto;
           display: block;
@@ -23,22 +33,30 @@
     </style>
   </head>
   <body>
-    <gg-header feature="dialog" page="1"></gg-header>
+    <gg-header feature="dialog" page="4"></gg-header>
 
     <main>
       <div>
-        <pre class="hide"><code class="language-html">
-&lt;dialog id="dialog"&gt;
+        <pre class="hide"><code class="language-css">
+dialog::backdrop {
+  background: rgb(0 0 0 / 0.4);
+}
 
-  &lt;form method="dialog"&gt;
-    &lt;img src="/assets/img/cherry.svg" alt="Cherry" /&gt;
-    &lt;button type="submit"&gt;Submit&lt;/button&gt;
-  &lt;/form&gt;
+dialog::backdrop {
+  backdrop-filter: blur(4px) saturate(1.2);
+}
 
-&lt;/dialog&gt;
+dialog::backdrop {
+  background: linear-gradient(
+    to right bottom in oklch,
+    color(display-p3 0.746 0.214 0.18 / 0.6),
+    color(display-p3 0.933 0.536 0.215 / 0.6),
+    color(display-p3 0.933 0.691 0.717 / 0.6),
+    color(display-p3 0.455 0.759 0.789 / 0.6)
+  );
+}
 
-&lt;button onclick="dialog.showModal()"&gt;Open Dialog&lt;/button&gt;
-   </code></pre>
+        </code></pre>
       </div>
       <div>
         <dialog id="dialog">

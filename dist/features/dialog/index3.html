@@ -6,12 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      dialog {
+        padding: 1.5rem;
+        & button {
+          margin-left: auto;
+          display: block;
+        }
+        & img {
+          width: 100px;
+          margin: 3rem;
+        }
+      }
+    </style>
   </head>
   <body>
     <gg-header feature="dialog" page="3"></gg-header>
 
-    <main></main>
+    <main>
+      <div>
+        <pre class="hide"><code class="language-html">
+&lt;dialog id="dialog"&gt;
+
+  &lt;img src="/assets/img/cherry.svg" alt="Cherry" /&gt;
+
+  &lt;button commandfor="dialog" command="close"&gt;Close&lt;/button&gt;
+
+&lt;/dialog&gt;
+
+&lt;button commandfor="dialog" command="show-modal"&gt;Open Dialog&lt;/button&gt;
+   </code></pre>
+      </div>
+      <div>
+        <dialog id="dialog">
+          <img src="/assets/img/cherry.svg" alt="Cherry" />
+          <button commandfor="dialog" command="close">Close</button>
+        </dialog>
+
+        <button commandfor="dialog" command="show-modal">Open Dialog</button>
+      </div>
+    </main>
 
     <gg-baseline feature="dialog"></gg-baseline>
   </body>

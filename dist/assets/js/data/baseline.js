@@ -277,13 +277,13 @@ export const baselineData = {
       },
       safari: {
         name: "Safari",
-        level: "full",
+        level: "partial",
         version: 15.4,
         date: "2022-03-14",
       },
       safariIOS: {
         name: "Safari iOS",
-        level: "full",
+        level: "partial",
         version: 15.4,
         date: "2022-03-14",
       },

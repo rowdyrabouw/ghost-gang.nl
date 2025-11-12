@@ -6,12 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      dialog {
+        padding: 1.5rem;
+        & button {
+          margin: 0 auto;
+          display: block;
+        }
+        & > button {
+          margin: 0;
+          margin-left: auto;
+          border-radius: 90%;
+          width: 64px;
+          height: 64px;
+          padding: 0;
+          background-color: transparent;
+          border: 1px solid rgb(207, 36, 35);
+        }
+
+        & img {
+          width: 100px;
+          margin: 3rem;
+        }
+      }
+    </style>
   </head>
   <body>
     <gg-header feature="dialog" page="2"></gg-header>
 
-    <main></main>
+    <main>
+      <div>
+        <pre class="hide"><code class="language-html">
+&lt;!-- closedby = any, closerequest or none --&gt;
+
+&lt;dialog id="dialog" closedby="none"&gt;
+
+  &lt;button onclick="dialog.close()"&gt;Close&lt;/button&gt;
+
+  &lt;form method="dialog"&gt;
+    &lt;img src="/assets/img/cherry.svg" alt="Cherry" /&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+  &lt;/form&gt;
+
+&lt;/dialog&gt;
+
+&lt;button onclick="dialog.showModal()"&gt;Open Dialog&lt;/button&gt;
+   </code></pre>
+      </div>
+      <div>
+        <dialog id="dialog" closedby="none">
+          <button onclick="dialog.close()">Close</button>
+          <form method="dialog">
+            <img src="/assets/img/cherry.svg" alt="Cherry" />
+            <button type="submit">Submit</button>
+          </form>
+        </dialog>
+
+        <button onclick="dialog.showModal()">Open Dialog</button>
+      </div>
+    </main>
 
     <gg-baseline feature="dialog"></gg-baseline>
   </body>
