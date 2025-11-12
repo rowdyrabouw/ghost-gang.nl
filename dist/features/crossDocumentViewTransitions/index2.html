@@ -7,11 +7,20 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      main > img {
+        margin: 0 auto;
+        display: block;
+        width: 400px;
+      }
+    </style>
   </head>
   <body>
     <gg-header feature="crossDocumentViewTransitions" page="2"></gg-header>
 
-    <main></main>
+    <main>
+      <img src="/assets/img/inky-right.svg" alt="Blinky" />
+    </main>
 
     <gg-baseline feature="crossDocumentViewTransitions"></gg-baseline>
   </body>

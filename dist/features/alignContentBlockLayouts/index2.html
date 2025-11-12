@@ -7,11 +7,59 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      main > div {
+        display: flex;
+        justify-content: space-around;
+      }
+      h2 {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <gg-header feature="alignContentBlockLayouts" page="2"></gg-header>
 
-    <main></main>
+    <main>
+      <div>
+        <div>
+          <h2>position absolute and transform</h2>
+          <pre class="hide"><code class="language-css">
+div.centered {
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+    </code></pre>
+        </div>
+        <div>
+          <h2>flexbox</h2>
+
+          <pre class="hide"><code class="language-css">
+div.centered {
+
+  display: flex;
+  align-items: center;
+
+}
+    </code></pre>
+        </div>
+        <div>
+          <h2>grid</h2>
+
+          <pre class="hide"><code class="language-css">
+div.centered {
+
+  display: grid;
+  place-items: center;
+  
+}
+    </code></pre>
+        </div>
+      </div>
+    </main>
 
     <gg-baseline feature="alignContentBlockLayouts"></gg-baseline>
   </body>

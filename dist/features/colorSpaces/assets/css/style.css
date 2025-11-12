@@ -1,0 +1,71 @@
+main {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+main > div {
+  display: flex;
+  justify-content: center;
+  margin-block-end: 2rem;
+}
+
+svg {
+  height: 200px;
+}
+
+main span {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+}
+
+@layer red {
+  .red .srgb {
+    color: red;
+  }
+  .red .display-p3 {
+    color: color(display-p3 1 0 0);
+  }
+  .red .oklch {
+    color: oklch(63% 0.5 30);
+  }
+}
+
+@layer orange {
+  .orange .srgb {
+    color: orange;
+  }
+  .orange .display-p3 {
+    color: color(display-p3 1 0.5 0);
+  }
+  .orange .oklch {
+    color: oklch(80% 0.5 84);
+  }
+}
+
+@layer blue {
+  .blue .srgb {
+    color: blue;
+  }
+  .blue .display-p3 {
+    color: color(display-p3 0 0 1);
+  }
+  .blue .oklch {
+    color: oklch(50% 0.5 240);
+  }
+}
+
+@layer pink {
+  .pink .srgb {
+    color: deeppink;
+  }
+  .pink .display-p3 {
+    color: color(display-p3 1 0 0.5);
+  }
+  .pink .oklch {
+    color: oklch(65% 0.5 0);
+  }
+}

@@ -20,9 +20,9 @@ hljs.registerLanguage("javascript", javascript);
 hljs.registerLanguage("css", css);
 hljs.registerLanguage("xml", xml);
 hljs.highlightAll();
-if (document.querySelector("pre")) {
-  document.querySelector("pre").classList.remove("hide");
-}
+
+const preElements = document.querySelectorAll("pre");
+preElements.forEach((pre) => pre.classList.remove("hide"));
 
 // gamepad navigation
 const LOG = true;

@@ -7,12 +7,113 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      .dark {
+        /* forces dark color-scheme */
+        color-scheme: dark;
+        color: light-dark(#060606, #f1f3f4);
+        background-color: light-dark(#f1f3f4, #060606);
+      }
+      html {
+        &:has(#optionAuto:checked) {
+          color-scheme: light dark;
+        }
+        &:has(#optionLight:checked) {
+          color-scheme: light;
+        }
+        &:has(#optionDark:checked) {
+          color-scheme: dark;
+        }
+      }
+      main > div {
+        margin-bottom: 1rem;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+      }
+      section {
+        max-width: 80ch;
+        margin: 0 auto;
+        line-height: 1.5;
+        font-size: 1.25rem;
+        text-wrap: pretty;
+        padding: 1rem 0.5rem 0.5rem 2rem;
+
+        h2 {
+          margin-block-start: 0;
+        }
+      }
+    </style>
   </head>
   <body>
     <gg-header feature="colorScheme" page="3"></gg-header>
 
-    <main></main>
+    <main>
+      <div>
+        <pre class="hide"><code class="language-css">
+:root {
+  color-scheme: light dark;
+
+  color: light-dark(black, white);
+  background: light-dark(white, black);
+}
+
+.light {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+      </code></pre>
+        <fieldset>
+          <legend>&nbsp;Theme&nbsp;</legend>
+
+          <div class="nice-layout">
+            <input
+              checked
+              type="radio"
+              id="optionAuto"
+              name="choice"
+              value="0"
+            />
+            <label for="optionAuto">Auto</label>
+
+            <input type="radio" id="optionLight" name="choice" value="1" />
+            <label for="optionLight">Light</label>
+
+            <input type="radio" id="optionDark" name="choice" value="2" />
+            <label for="optionDark">Dark</label>
+          </div>
+        </fieldset>
+      </div>
+      <section class="dark">
+        <h2>Inspired by Pizza</h2>
+        <p>
+          Pac-Man was created by Japanese designer Toru Iwatani and released by
+          Namco in Japan in 1980, quickly becoming a global phenomenon. The
+          game, originally named "Puck-Man", was inspired by the shape of a
+          pizza with a slice missing and the Japanese phrase for the sound of
+          chomping. Its non-violent, maze-chase format was a departure from the
+          popular space shooters of the time and was designed to appeal to a
+          broader audience.
+        </p>
+      </section>
+    </main>
 
     <gg-baseline feature="colorScheme"></gg-baseline>
+
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/color-scheme"
+      target="_blank"
+      class="mdn"
+    >
+      <img src="/assets/img/cherry.svg" alt="" />
+      <span class="sr-only">MDN documentation</span>
+    </a>
   </body>
 </html>

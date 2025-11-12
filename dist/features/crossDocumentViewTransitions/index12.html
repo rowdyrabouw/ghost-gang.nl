@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ghost Gang</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <gg-header feature="crossDocumentViewTransitions" page="12"></gg-header>
+
+    <main>
+      <pre class="hide"><code class="language-css">
+@view-transition {
+  navigation: auto;
+}
+
+img.blinky {        
+  view-transition-name: blinky;
+}
+
+img.pinky {        
+  view-transition-name: pinky;
+}
+
+img.inky {        
+  view-transition-name: inky;
+}
+
+img.clyde {        
+  view-transition-name: clyde;
+}
+      </code></pre>
+    </main>
+
+    <gg-baseline feature="crossDocumentViewTransitions"></gg-baseline>
+
+    <a href="https://view-transitions.chrome.dev" target="_blank" class="mdn">
+      <img src="/assets/img/cherry.svg" alt="" />
+      <span class="sr-only">An Interactive Guide to CSS Container Queries</span>
+    </a>
+    <a
+      href="https://developer.chrome.com/docs/web-platform/view-transitions/cross-document"
+      target="_blank"
+      class="mdn2"
+    >
+      <img src="/assets/img/cherry.svg" alt="" />
+      <span class="sr-only">An Interactive Guide to CSS Container Queries</span>
+    </a>
+  </body>
+</html>

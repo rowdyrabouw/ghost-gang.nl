@@ -7,11 +7,44 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      main > div {
+        height: 100%;
+        background-image: url("/assets/img/pixels.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        align-content: center;
+        text-align: center;
+      }
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        button {
+          background-color: transparent;
+          border: 2px solid #fff;
+          border-radius: 16px;
+          padding: 12px 24px;
+          font-size: 3rem;
+          font-weight: bold;
+          color: #fff;
+          backdrop-filter: blur(3px);
+        }
+      }
+    </style>
   </head>
   <body>
     <gg-header feature="backdropFilter" page="1"></gg-header>
 
-    <main></main>
+    <main>
+      <div>
+        <div class="buttons">
+          <button>Get Tickets</button>
+          <button>Showtimes</button>
+        </div>
+      </div>
+    </main>
 
     <gg-baseline feature="backdropFilter"></gg-baseline>
   </body>

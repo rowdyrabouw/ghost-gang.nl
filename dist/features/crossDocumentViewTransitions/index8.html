@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ghost Gang</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+      main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      main > img {
+        margin: 0 auto;
+        display: block;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <gg-header feature="crossDocumentViewTransitions" page="8"></gg-header>
+
+    <main>
+      <img src="/assets/img/blinky-right.svg" alt="Blinky" />
+      <img src="/assets/img/pinky-right.svg" alt="Blinky" />
+    </main>
+
+    <gg-baseline feature="crossDocumentViewTransitions"></gg-baseline>
+  </body>
+</html>

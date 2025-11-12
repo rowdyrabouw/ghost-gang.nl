@@ -39,24 +39,24 @@ export class Header extends HTMLElement {
 
     let previousLink;
     if (page === "1" && prevItem) {
-      previousLink = `<a href="/features/${prevItem.name}/index1.html" id="previous"><img src="/assets/img/blinky-left.svg" alt="Previous" width="32px"/></a>`;
+      previousLink = `<a href="/features/${prevItem.name}/index1.html" id="previous"><img src="/assets/img/blinky-left.svg" alt="Previous" width="44px"/></a>`;
     } else if (page > 1) {
       previousLink = `<a href="/features/${feature}/index${
         parseInt(page, 10) - 1
-      }.html" id="previous"><img src="/assets/img/pacman-left.svg" alt="Previous" width="32px"/></a>`;
+      }.html" id="previous"><img src="/assets/img/pacman-left.svg" alt="Previous" width="44px"/></a>`;
     } else {
-      previousLink = `<img src="/assets/img/ghost.svg" alt="" width="32px"/>`;
+      previousLink = `<img src="/assets/img/ghost.svg" alt="" width="44px"/>`;
     }
 
     let nextLink;
     if (page < totalPages) {
       nextLink = `<a href="/features/${feature}/index${
         parseInt(page, 10) + 1
-      }.html" id="next"><img src="/assets/img/pacman-right.svg" alt="Next" width="32px"/></a>`;
+      }.html" id="next"><img src="/assets/img/pacman-right.svg" alt="Next" width="44px"/></a>`;
     } else if (page == totalPages && nextItem) {
-      nextLink = `<a href="/features/${nextItem.name}/index1.html" id="next"><img src="/assets/img/blinky-left.svg" alt="Next" width="32px"/></a>`;
+      nextLink = `<a href="/features/${nextItem.name}/index1.html" id="next"><img src="/assets/img/blinky-right.svg" alt="Next" width="44px"/></a>`;
     } else {
-      nextLink = `<img src="/assets/img/ghost.svg" alt="" width="32px"/>`;
+      nextLink = `<img src="/assets/img/ghost.svg" alt="" width="44px"/>`;
     }
 
     let dots = "";

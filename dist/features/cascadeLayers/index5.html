@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ghost Gang</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      main > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+      }
+      @layer base, variants;
+
+      @layer variants {
+        .blinky {
+          color: red;
+        }
+      }
+
+      @layer base {
+        .ghost {
+          width: 150px;
+          color: lightgray;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <gg-header feature="cascadeLayers" page="5"></gg-header>
+
+    <main>
+      <div>
+        <pre class="hide"><code class="language-css">
+.m-1 {
+  margin: 0.25rem !important;
+}
+
+.m-2 {
+  margin: 0.5rem !important;
+}
+
+.m-3 {
+  margin: 1rem !important;
+}
+
+.m-4 {
+  margin: 1.5rem !important;
+}
+
+.m-5 {
+  margin: 3rem !important;
+}
+ </code></pre>
+        <pre class="hide"><code class="language-css">
+@layer bootstrap.override, bootstrap.framework, base;
+
+
+@import url('bootstrap.css') layer(bootstrap.framework);
+
+
+@layer bootstrap.override {
+
+  .m-5 {
+    margin: 2rem !important;
+  }
+
+}
+
+
+@layer base {
+  .....
+}
+
+
+</code></pre>
+      </div>
+    </main>
+
+    <gg-baseline feature="cascadeLayers"></gg-baseline>
+
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@layer"
+      target="_blank"
+      class="mdn"
+    >
+      <img src="/assets/img/cherry.svg" alt="" />
+      <span class="sr-only">MDN documentation</span>
+    </a>
+  </body>
+</html>

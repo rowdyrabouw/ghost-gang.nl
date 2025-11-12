@@ -4,6 +4,7 @@ body {
   height: 100vh;
   row-gap: 2rem;
   overflow: hidden;
+  margin: 0;
 }
 
 header {
@@ -26,4 +27,18 @@ main {
 
 footer {
   grid-row: 3;
+}
+
+.mdn {
+  width: 48px;
+  position: absolute;
+  right: 40px;
+  bottom: 90px;
+}
+
+.mdn2 {
+  width: 48px;
+  position: absolute;
+  right: 90px;
+  bottom: 90px;
 }

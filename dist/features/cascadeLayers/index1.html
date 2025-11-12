@@ -7,11 +7,160 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      main > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+      }
+      .ghost {
+        width: 200px;
+        color: lightgray;
+      }
+      .blinky {
+        color: red;
+      }
+    </style>
   </head>
   <body>
     <gg-header feature="cascadeLayers" page="1"></gg-header>
 
-    <main></main>
+    <main>
+      <div>
+        <pre class="hide"><code class="language-html">
+&lt;div class="ghost"&gt;
+  &lt;svg&gt;
+    ...
+  &lt;/svg&gt;
+&lt;/div&gt;
+
+&lt;div class="ghost blinky"&gt;
+  &lt;svg&gt;
+    ...
+  &lt;/svg&gt;
+&lt;/div&gt;
+
+</code></pre>
+        <pre class="hide"><code class="language-css">
+.ghost {
+  width: 200px;
+  color: lightgray;
+}
+
+.blinky {
+  color: red;
+}
+
+
+
+    </code></pre>
+        <div class="ghost">
+          <svg
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            viewBox="0 0 850.4 850.4"
+          >
+            <!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
+            <defs>
+              <style>
+                .st0a {
+                  fill: currentColor;
+                }
+
+                .st1a {
+                  fill: #fff;
+                  stroke: #231f20;
+                  stroke-miterlimit: 10;
+                }
+
+                .st2a {
+                  fill: #2e5e9b;
+                }
+              </style>
+            </defs>
+            <ellipse
+              class="st1a"
+              cx="627.18"
+              cy="376.3"
+              rx="118.4"
+              ry="150.5"
+            />
+            <ellipse
+              class="st1a"
+              cx="316.98"
+              cy="376.3"
+              rx="118.4"
+              ry="150.5"
+            />
+            <g>
+              <path
+                class="st0a"
+                d="M63.88,547.1v-155c0-184.6,149.7-334.3,334.3-334.3h54.1c184.6,0,334.3,149.7,334.3,334.3v316c.9,48.8-35.1,84.5-68.1,77.3-33-7.2-26.4-72.6-80.4-76.2-39.6,3.6-40.8,76.1-93,83.1-52.2,6.9-63.5-81-106.3-81.9-42.9-.9-53.1,78.6-108.5,79-59.4,2.8-74.1-80.8-115.7-79.5-20.2,1.2-34.7,18.1-50.9,50.6-12.4,24.9-44.7,33.4-67,16.7-10.7-8-20.4-21.4-27-42.2-3.9-12.4-5.7-25.4-5.7-38.3v-149.6h-.1ZM631.38,488.4c40,0,74.7-26.1,92.1-64.4,7.7-16.8,12-36,12-56.4s-.2-7.7-.5-11.5c-5-61.3-49.5-109.3-103.7-109.3s-104.1,54.1-104.1,120.8,46.6,120.8,104.1,120.8h.1ZM316.98,488.4c42.7,0,79.4-28.9,96.1-70.5,6.2-15.3,9.6-32.4,9.6-50.3s0-2.4,0-3.6c-1.7-65-48.4-117.2-105.7-117.2s-105.7,54.1-105.7,120.8,47.3,120.8,105.7,120.8h0Z"
+              />
+              <g>
+                <path
+                  class="st2a"
+                  d="M631.38,381.7c0,32.2,24.5,58.2,54.6,58.2s27.8-6,37.5-15.9c7.7-16.8,12-36,12-56.4s-.2-7.7-.5-11.5c-8.9-19.3-27.5-32.7-49.1-32.7s-54.6,26.1-54.6,58.2l.1.1Z"
+                />
+                <path
+                  class="st2a"
+                  d="M313.48,381.7c0,32.2,25,58.2,55.9,58.2s33.5-8.6,43.7-22c6.2-15.3,9.6-32.4,9.6-50.3s0-2.4,0-3.6c-7.2-23.5-28.3-40.5-53.3-40.5s-55.9,26.1-55.9,58.2h0Z"
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="ghost blinky">
+          <svg
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 850.4 850.4"
+          >
+            <!-- Generator: Adobe Illustrator 29.7.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 8)  -->
+            <defs>
+              <style>
+                .st0 {
+                  fill: #fff;
+                  stroke: #231f20;
+                  stroke-miterlimit: 10;
+                }
+
+                .st1 {
+                  fill: #2e5e9b;
+                }
+
+                .st2 {
+                  fill: currentColor;
+                }
+              </style>
+            </defs>
+            <ellipse class="st0" cx="223.3" cy="376.3" rx="118.4" ry="150.5" />
+            <ellipse class="st0" cx="533.5" cy="376.3" rx="118.4" ry="150.5" />
+            <g>
+              <path
+                class="st2"
+                d="M786.6,547.1v-155c0-184.6-149.7-334.3-334.3-334.3h-54.1c-184.6,0-334.3,149.7-334.3,334.3v316c-.9,48.8,35.1,84.5,68.1,77.3,33-7.2,26.4-72.6,80.4-76.2,39.6,3.6,40.8,76.1,93,83.1,52.2,6.9,63.5-81,106.3-81.9,42.9-.9,53.1,78.6,108.5,79,59.4,2.8,74.1-80.8,115.7-79.5,20.2,1.2,34.7,18.1,50.9,50.6,12.4,24.9,44.7,33.4,67,16.7,10.7-8,20.4-21.4,27-42.2,3.9-12.4,5.7-25.4,5.7-38.3v-149.6ZM219.1,488.4c-40,0-74.7-26.1-92.1-64.4-7.7-16.8-12-36-12-56.4s.2-7.7.5-11.5c5-61.3,49.5-109.3,103.7-109.3s104.1,54.1,104.1,120.8-46.6,120.8-104.1,120.8ZM533.5,488.4c-42.7,0-79.4-28.9-96.1-70.5-6.2-15.3-9.6-32.4-9.6-50.3s0-2.4,0-3.6c1.7-65,48.4-117.2,105.7-117.2s105.7,54.1,105.7,120.8-47.3,120.8-105.7,120.8Z"
+              />
+              <g>
+                <path
+                  class="st1"
+                  d="M219.1,381.7c0,32.2-24.5,58.2-54.6,58.2s-27.8-6-37.5-15.9c-7.7-16.8-12-36-12-56.4s.2-7.7.5-11.5c8.9-19.3,27.5-32.7,49.1-32.7s54.6,26.1,54.6,58.2Z"
+                />
+                <path
+                  class="st1"
+                  d="M537,381.7c0,32.2-25,58.2-55.9,58.2s-33.5-8.6-43.7-22c-6.2-15.3-9.6-32.4-9.6-50.3s0-2.4,0-3.6c7.2-23.5,28.3-40.5,53.3-40.5s55.9,26.1,55.9,58.2Z"
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </main>
 
     <gg-baseline feature="cascadeLayers"></gg-baseline>
   </body>

@@ -8,68 +8,11 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
     <style>
-      .card img {
-        max-width: 100%;
-      }
-
-      h2 {
-        margin: 0;
-        margin-block: 1rem;
-        text-align: center;
-        padding: 0;
-        font-size: 1.1rem;
-      }
-
-      p {
-        margin-inline: 1rem;
-      }
-      /* make the two grid items a containment context */
-      .wide-column,
-      .narrow-column {
-        container-type: inline-size;
-      }
-
-      .narrow-column {
-        width: 320px;
-      }
-      .wide-column {
-        width: 800px;
-      }
-      .card {
-        border: 1px solid white;
-      }
-
-      /* the card is placed as a child of the two grid items, displaying as one or two columns  */
-      @container (min-width: 37.5rem) {
-        .card {
-          display: grid;
-          grid-template-columns: 1fr 3fr;
-          grid-template-rows: auto 1fr;
-          align-items: start;
-          column-gap: 20px;
-        }
-
-        .card h2 {
-          grid-row: 1;
-          grid-column: 2;
-          font-size: 2rem;
-          text-align: left;
-        }
-
-        p {
-          margin: 0;
-        }
-
-        .card img {
-          grid-row: 1 / 3;
-          grid-column: 1;
-        }
-
-        .card .content {
-          grid-column: 2;
-          grid-row: 2;
-          padding: 0 20px 20px 0;
-        }
+      main > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
       }
     </style>
   </head>
@@ -77,40 +20,45 @@
     <gg-header feature="containerQueries" page="2"></gg-header>
 
     <main>
-      <div
-        style="
-          display: flex;
-          margin: 0 auto;
-          gap: 64px;
-          flex-wrap: wrap;
-          justify-content: center;
-          align-content: center;
-        "
-      >
-        <div class="narrow-column">
-          <article class="card">
-            <h2>Video Game History Museum</h2>
-            <img src="/assets/img/vghm.jpg" alt="" />
-            <p class="content">
-              The Video Game History Museum in Zagreb is dedicated to preserving
-              and showcasing the evolution of video games and gaming culture
-              from the 1960s to the early 2000s through informative and
-              interactive exhibits.
-            </p>
-          </article>
-        </div>
-        <div class="wide-column">
-          <article class="card">
-            <h2>Video Game History Museum</h2>
-            <img src="/assets/img/vghm.jpg" alt="" />
-            <p class="content">
-              The Video Game History Museum in Zagreb is dedicated to preserving
-              and showcasing the evolution of video games and gaming culture
-              from the 1960s to the early 2000s through informative and
-              interactive exhibits.
-            </p>
-          </article>
-        </div>
+      <div>
+        <pre class="hide"><code class="language-html">
+&lt;div class="item"&gt;
+  &lt;article class="card"&gt;
+    &lt;h2&gt;Video Game History Museum&lt;/h2&gt;
+    &lt;img src="/assets/img/vghm.jpg" alt="" /&gt;
+    &lt;p class="content"&gt;
+      The Video Game History Museum in Zagreb is dedicated to preserving
+      and showcasing the evolution of video games and gaming culture from
+      the 1960s to the early 2000s through informative and interactive
+      exhibits.
+    &lt;/p&gt;
+  &lt;/article&gt;
+&lt;/div&gt;
+
+      </code></pre>
+        <pre class="hide"><code class="language-css">
+.card {
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.item {
+  container-type: inline-size;
+}
+
+@container (min-width: 37.5rem) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr;
+    align-items: start;
+    column-gap: 20px;
+  }
+
+  ....
+
+}
+      </code></pre>
       </div>
     </main>
 

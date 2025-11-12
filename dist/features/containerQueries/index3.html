@@ -7,25 +7,31 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      main {
+        margin: 0 auto;
+      }
+    </style>
   </head>
   <body>
     <gg-header feature="containerQueries" page="3"></gg-header>
 
     <main>
       <pre class="hide"><code class="language-css">
-/* define a container */
+/* container query units */
 
-.card {
-  container: inline-size;
-}
+cqw    /* 1% of a query container's width */
 
+cqh    /* 1% of a query container's height */
 
-@container (min-width: 37.5rem) {
+cqi    /* 1% of a query container's inline size */
 
-/* apply some styles */
+cqb    /* 1% of a query container's block size */
 
-}
-</code></pre>
+cqmin  /* The smaller value of either cqi or cqb */
+
+cqmax  /* The larger value of either cqi or cqb */
+      </code></pre>
     </main>
 
     <gg-baseline feature="containerQueries"></gg-baseline>

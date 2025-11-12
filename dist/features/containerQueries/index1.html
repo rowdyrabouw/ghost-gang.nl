@@ -7,11 +7,92 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      .card {
+        border: 1px solid white;
+        border-radius: 8px;
+        text-align: center;
+        & img {
+          width: 200px;
+        }
+      }
+
+      h2 {
+        margin: 0;
+        margin-block: 1rem;
+        text-align: center;
+        padding: 0;
+        font-size: 1.1rem;
+      }
+
+      p {
+        margin-inline: 1rem;
+        text-wrap: balance;
+      }
+
+      .item {
+        margin: 0 auto;
+        container-type: inline-size;
+        width: 320px;
+        resize: both;
+        overflow: auto;
+        border: 4px dashed rgb(232, 44, 39);
+        border-radius: 16px;
+        padding: 32px;
+      }
+
+      @container (min-width: 37.5rem) {
+        .card {
+          display: grid;
+          grid-template-columns: 1fr 3fr;
+          grid-template-rows: auto 1fr;
+          align-items: start;
+          column-gap: 20px;
+          text-align: unset;
+        }
+
+        .card h2 {
+          grid-row: 1;
+          grid-column: 2;
+          font-size: 2rem;
+          text-align: left;
+        }
+
+        p {
+          margin: 0;
+          text-wrap: balance;
+        }
+
+        .card img {
+          grid-row: 1 / 3;
+          grid-column: 1;
+        }
+
+        .card p {
+          grid-column: 2;
+          grid-row: 2;
+          padding: 0 20px 20px 0;
+        }
+      }
+    </style>
   </head>
   <body>
     <gg-header feature="containerQueries" page="1"></gg-header>
 
-    <main></main>
+    <main>
+      <div class="item">
+        <article class="card">
+          <h2>Blinky</h2>
+          <img src="/assets/img/blinky-left.svg" alt="" />
+          <p>
+            Blinky (known in Japan as Akabei) is one of the four ghosts that
+            chase Pac-Man. He was given the personality "Shadow" (also known in
+            Japan as "Oikake", meaning "to pursue") due to constantly pursuing
+            the player.
+          </p>
+        </article>
+      </div>
+    </main>
 
     <gg-baseline feature="containerQueries"></gg-baseline>
   </body>

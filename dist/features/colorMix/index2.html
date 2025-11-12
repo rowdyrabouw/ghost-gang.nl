@@ -7,12 +7,82 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      .color-space {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        width: 90vw;
+        margin: 0 auto;
+        margin-block-start: 4rem;
+      }
+      .srgb {
+        background: color-mix(in srgb, black, white);
+      }
+      .linear-srgb {
+        background: color-mix(in srgb-linear, black, white);
+      }
+      .hsl {
+        background: color-mix(in hsl, black, white);
+      }
+      .hwb {
+        background: color-mix(in hwb, black, white);
+      }
+      .lch {
+        background: color-mix(in lch, black, white);
+      }
+      .oklch {
+        background: color-mix(in oklch, black, white);
+      }
+      .lab {
+        background: color-mix(in lab, black, white);
+      }
+      .oklab {
+        background: color-mix(in oklab, black, white);
+      }
+      .xyz {
+        background: color-mix(in xyz, black, white);
+      }
+
+      .mix {
+        aspect-ratio: 4/1;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        color: black;
+        padding: 2ch;
+      }
+    </style>
   </head>
   <body>
     <gg-header feature="colorMix" page="2"></gg-header>
 
-    <main></main>
+    <main>
+      <pre class="hide"><code class="language-css">
+.item {
+  background: color-mix(in [colorspace], black, white);
+}
+    </code></pre>
+      <div class="color-space">
+        <div class="mix srgb">sRGB</div>
+        <div class="mix linear-srgb">linear-srgb</div>
+        <div class="mix hsl">HSL</div>
+        <div class="mix hwb">HWB</div>
+        <div class="mix lch">LCH</div>
+        <div class="mix oklch">OKLCH</div>
+        <div class="mix lab">LAB</div>
+        <div class="mix oklab">OKLAB</div>
+        <div class="mix xyz">XYZ</div>
+      </div>
+    </main>
 
     <gg-baseline feature="colorMix"></gg-baseline>
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/color-mix"
+      target="_blank"
+      class="mdn"
+    >
+      <img src="/assets/img/cherry.svg" alt="" />
+      <span class="sr-only">MDN documentation</span>
+    </a>
   </body>
 </html>

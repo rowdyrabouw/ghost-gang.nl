@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ghost Gang</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      main {
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <gg-header feature="containerQueries" page="4"></gg-header>
+
+    <main>
+      <pre class="hide"><code class="language-css">
+h2 {
+  font-size: clamp(1.25rem, 10px + 3.33cqw, 45px);
+}
+
+img {
+  width: clamp(30px, 5px + 8cqi, 90px);
+}
+      </code></pre>
+    </main>
+
+    <gg-baseline feature="containerQueries"></gg-baseline>
+  </body>
+</html>

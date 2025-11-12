@@ -1,6 +1,6 @@
 .dots {
   text-align: center;
-  margin-block-start: 0.75rem;
+  padding-block: 0.75rem;
 }
 
 .dot {
@@ -8,11 +8,12 @@
   width: 12px;
   margin: 0 8px;
   display: inline-block;
+  border-radius: 3px;
 }
 .dot.black {
-  background-color: black;
+  background-color: light-dark(#ffffff, #060606);
 }
 
 .dot.yellow {
-  background-color: rgb(118, 118, 8);
+  background-color: #ffa202;
 }
