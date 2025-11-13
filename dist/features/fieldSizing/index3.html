@@ -11,7 +11,24 @@
   <body>
     <gg-header feature="fieldSizing" page="3"></gg-header>
 
-    <main></main>
+    <main>
+      <pre class="hide"><code class="language-css">
+textarea {
+  min-block-size: 5lh;
+  max-block-size: 70svh;
+  min-inline-size: 40ch;
+  max-inline-size: 80ch;
+}
+
+select {
+  min-inline-size: 20ch;
+}
+
+input {
+  min-inline-size: 18ch;
+}
+    </code></pre>
+    </main>
 
     <gg-baseline feature="fieldSizing"></gg-baseline>
   </body>

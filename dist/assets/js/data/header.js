@@ -10,7 +10,7 @@ export const headerData = {
     { name: "containerQueries", pages: 5 },
     { name: "crossDocumentViewTransitions", pages: 12 },
     { name: "dialog", pages: 5 },
-    { name: "fieldSizing", pages: 3 },
+    { name: "fieldSizing", pages: 4 },
     { name: "mediaQueriesRangeSyntax", pages: 2 },
     { name: "mutuallyExclusiveDetailsElements", pages: 3 },
     { name: "nesting", pages: 3 },

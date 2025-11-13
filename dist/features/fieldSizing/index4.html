@@ -37,10 +37,24 @@
         border: none;
         border-radius: 4px;
       }
+      textarea {
+        min-block-size: 5lh;
+        max-block-size: 50svh;
+        min-inline-size: 40ch;
+        max-inline-size: 80ch;
+      }
+
+      select {
+        min-inline-size: 20ch;
+      }
+
+      input {
+        min-inline-size: 18ch;
+      }
     </style>
   </head>
   <body>
-    <gg-header feature="fieldSizing" page="2"></gg-header>
+    <gg-header feature="fieldSizing" page="4"></gg-header>
 
     <main>
       <div>
@@ -88,5 +102,13 @@
       });
     </script>
     <gg-baseline feature="fieldSizing"></gg-baseline>
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/field-sizing"
+      target="_blank"
+      class="mdn"
+    >
+      <img src="/assets/img/cherry.svg" alt="" />
+      <span class="sr-only">MDN Documentation</span>
+    </a>
   </body>
 </html>
