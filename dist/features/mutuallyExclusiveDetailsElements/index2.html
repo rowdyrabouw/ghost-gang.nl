@@ -7,11 +7,105 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      main {
+        margin: 0 auto;
+        align-content: normal;
+      }
+      main > div {
+        display: flex;
+        gap: 2rem;
+      }
+      details {
+        width: 500px;
+
+        &:first-of-type {
+          margin-block-start: 1rem;
+        }
+        img {
+          width: 100px;
+          float: left;
+          margin-inline-end: 1rem;
+        }
+      }
+    </style>
   </head>
   <body>
     <gg-header feature="mutuallyExclusiveDetailsElements" page="2"></gg-header>
 
-    <main></main>
+    <main>
+      <div>
+        <pre class="hide"><code class="language-html">
+&lt;details name="ghost-gang" open&gt;
+  &lt;summary&gt;Blinky&lt;/summary&gt;
+  &lt;p&gt;
+    &lt;img src="/assets/img/blinky-right.svg" alt="Blinky" /&gt;
+    Blinky, also known by the nickname Shadow, is the leader of the
+    Ghosts and the arch-enemy of Pac-Man. He is also portrayed as the
+    most aggressive ghost who always chases Pac-Man, and is hard to
+    shake once he starts.
+  &lt;/p&gt;
+&lt;/details&gt;
+
+&lt;details name="ghost-gang"&gt;
+  &lt;summary&gt;Pinky&lt;/summary&gt;
+  &lt;p&gt;
+    &lt;img src="/assets/img/pinky-right.svg" alt="Pinky" /&gt;
+    Pinky, also known by the nickname Speedy, is one of the four main
+    ghosts in the Pac-Man series. She is represented as the only
+    female ghost and likes to be pretty. She attempts to ambush
+    Pac-Man by moving parallel to him.
+  &lt;/p&gt;
+&lt;/details&gt;
+
+......
+
+</code></pre>
+        <div>
+          <details name="ghost-gang" open>
+            <summary>Blinky</summary>
+            <p>
+              <img src="/assets/img/blinky-right.svg" alt="Blinky" />
+              Blinky, also known by the nickname Shadow, is the leader of the
+              Ghosts and the arch-enemy of Pac-Man. He is also portrayed as the
+              most aggressive ghost who always chases Pac-Man, and is hard to
+              shake once he starts.
+            </p>
+          </details>
+          <details name="ghost-gang">
+            <summary>Pinky</summary>
+            <p>
+              <img src="/assets/img/pinky-right.svg" alt="Pinky" />
+              Pinky, also known by the nickname Speedy, is one of the four main
+              ghosts in the Pac-Man series. She is represented as the only
+              female ghost and likes to be pretty. She attempts to ambush
+              Pac-Man by moving parallel to him.
+            </p>
+          </details>
+          <details name="ghost-gang">
+            <summary>Inky</summary>
+            <p>
+              <img src="/assets/img/inky-right.svg" alt="Inky" />
+              Inky, also known by the nickname Bashful, is one of the four main
+              ghosts in the Pac-Man series. He is often depicted as a goofy and
+              slow-headed ghost, not pursuing Pac-Man unless other ghosts are
+              near.
+            </p>
+          </details>
+          <details name="ghost-gang">
+            <summary>Clyde</summary>
+            <p>
+              <img src="/assets/img/clyde-right.svg" alt="Clyde" />
+              Clyde, also known by the nickname Pokey, is one of the four main
+              ghosts in the Pac-Man series. While the other three ghosts are off
+              chasing Pac-Man, Clyde will be off doing his own thing. He is
+              typically portrayed as the least intelligent and most submissive
+              ghost.
+            </p>
+          </details>
+        </div>
+      </div>
+    </main>
 
     <gg-baseline feature="mutuallyExclusiveDetailsElements"></gg-baseline>
   </body>
