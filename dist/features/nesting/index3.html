@@ -7,11 +7,87 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+      main {
+        display: flex;
+        gap: 4rem;
+        margin: 0 auto;
+      }
+      pre,
+      .placholder {
+        width: 270px;
+      }
+    </style>
   </head>
   <body>
     <gg-header feature="nesting" page="3"></gg-header>
+    <main>
+      <pre class="hide"><code class="language-css">
+/* Sass (SCSS) */
 
-    <main></main>
+.ghost {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+
+
+  .blinky {
+    color: red;
+  }
+
+  .clyde {
+    color: orange;
+    margin: 20px
+  }
+}
+
+</code></pre>
+
+      <pre class="hide"><code class="language-css">
+/* CSS */
+
+.ghost {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.ghost .blinky {
+  color: red;
+}
+
+.ghost .clyde {
+  color: orange;
+  margin: 20px
+}
+
+
+</code></pre>
+
+      <pre class="hide"><code class="language-css">
+/* Nested CSS */
+
+.ghost {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+
+
+  .blinky {
+    color: red;
+  }
+
+  .clyde {
+    color: orange;
+    margin: 20px
+  }
+}
+
+</code></pre>
+    </main>
 
     <gg-baseline feature="nesting"></gg-baseline>
   </body>

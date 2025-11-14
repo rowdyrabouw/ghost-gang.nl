@@ -7,46 +7,36 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
-    <style>
-      @view-transition {
-        navigation: auto;
-      }
-      pre,
-      .placholder {
-        width: 270px;
-      }
-      main {
-        display: flex;
-        gap: 4rem;
-        margin: 0 auto;
-      }
-    </style>
   </head>
   <body>
-    <gg-header feature="nesting" page="1"></gg-header>
+    <gg-header feature="nesting" page="4"></gg-header>
+
     <main>
       <pre class="hide"><code class="language-css">
-/* Sass (SCSS) */
+/* compound selectors */
 
 .ghost {
+
   width: 100px;
   height: 100px;
   margin: 10px;
 
-
-  .blinky {
-    color: red;
+  &:hover {
+    transform: scale(1.1);
   }
 
-  .clyde {
-    color: orange;
-    margin: 20px
+  &.active {
+    border: 2px solid black;
   }
+
+  &::after {
+    content: '';
+    ...
+  }
+
 }
 
 </code></pre>
-      <div class="placholder"></div>
-      <div class="placholder"></div>
     </main>
 
     <gg-baseline feature="nesting"></gg-baseline>
