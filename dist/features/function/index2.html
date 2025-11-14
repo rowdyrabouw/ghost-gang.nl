@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nesting</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      main {
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <gg-header feature="function" page="2"></gg-header>
+
+    <main>
+      <pre class="hide"><code class="language-css">
+/* color-scheme() only exists on paper right now */        
+
+@function --light-dark(--l, --d) {
+
+  result: if(color-scheme(dark): var(--d) ; else: var(--l));
+  
+}
+
+</code></pre>
+    </main>
+
+    <gg-baseline feature="function"></gg-baseline>
+  </body>
+</html>

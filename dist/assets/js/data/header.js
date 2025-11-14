@@ -13,7 +13,8 @@ export const headerData = {
     { name: "fieldSizing", pages: 4 },
     { name: "mediaQueriesRangeSyntax", pages: 2 },
     { name: "mutuallyExclusiveDetailsElements", pages: 3 },
-    { name: "nesting", pages: 3 },
+    { name: "nesting", pages: 4 },
+    { name: "function", pages: 3 },
     { name: "popover", pages: 3 },
     { name: "registeredCustomProperties", pages: 3 },
     { name: "relativeColors", pages: 3 },
@@ -21,6 +22,11 @@ export const headerData = {
     { name: "textWrapPretty", pages: 3 },
   ],
   features: {
+    function: {
+      title: "function",
+      description:
+        "The CSS function() feature allows developers to define custom functions within CSS, enabling dynamic calculations and transformations of property values for more flexible and responsive designs.",
+    },
     accentColor: {
       title: "accent color",
       description:

@@ -1,4 +1,44 @@
 export const baselineData = {
+  function: {
+    status: "limited",
+    name: "function",
+    support: {
+      chrome: {
+        name: "Chrome",
+        level: "full",
+        version: 139,
+        date: "2025-08-05",
+      },
+      chromeAndroid: {
+        name: "Chrome Android",
+        level: "full",
+        version: 139,
+        date: "2025-08-05",
+      },
+      edge: {
+        name: "Edge",
+        level: "full",
+        version: 139,
+        date: "2025-08-07",
+      },
+      firefox: {
+        name: "Firefox",
+        level: "no",
+      },
+      firefoxAndroid: {
+        name: "Firefox Android",
+        level: "no",
+      },
+      safari: {
+        name: "Safari",
+        level: "no",
+      },
+      safariIOS: {
+        name: "Safari iOS",
+        level: "no",
+      },
+    },
+  },
   accentColor: {
     status: "limited",
     name: "accent-color",
