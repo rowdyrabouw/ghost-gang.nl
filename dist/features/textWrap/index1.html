@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ghost Gang</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      main {
+        display: flex;
+        gap: 4rem;
+        margin: 0 auto;
+
+        div {
+          max-width: 645px;
+        }
+
+        .code {
+          display: flex;
+          justify-content: space-around;
+        }
+
+        article {
+          margin-block-start: 2rem;
+          background-color: antiquewhite;
+          padding: 1rem 1.5rem;
+          color: rgb(54, 45, 34);
+
+          h2 {
+            margin: 0;
+          }
+
+          p {
+            margin-block-start: 1rem;
+            max-inline-size: 55ch;
+            line-height: 1.5;
+          }
+
+          img {
+            display: block;
+            max-width: 90%;
+            margin-top: -1rem;
+          }
+
+          .pretty {
+            text-wrap: pretty;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <gg-header feature="textWrap" page="1"></gg-header>
+
+    <main>
+      <div>
+        <div class="code">
+          <pre class="hide"><code class="language-css">
+h2 {
+  text-wrap: wrap;   
+}
+  </code></pre>
+          <pre class="hide"><code class="language-css">
+p {
+  text-wrap: wrap;   
+}
+  </code></pre>
+        </div>
+        <article>
+          <h2>
+            Atari and Bandai Namco announce the Atari 2600+ Pac-Man Edition!
+          </h2>
+          <!-- prettier-ignore -->
+          <p>Atari has announced a limited edition of its Atari 2600+ console to celebrate PAC-MAN's 45th anniversary. The bright yellow console launches alongside limited edition CX-40+ wireless joysticks modeled after PAC-MAN and the Ghost Gang and a collection of four games.</p>
+          <img
+            src="/assets/img/atari2600+.png"
+            alt="Atari 2600+ Pac-Man Edition"
+          />
+        </article>
+      </div>
+      <div>
+        <div class="code">
+          <pre class="hide"><code class="language-css">
+h2 {
+  text-wrap: balance;
+}
+  </code></pre>
+          <pre class="hide"><code class="language-css">
+p {
+  text-wrap: pretty; 
+}
+  </code></pre>
+        </div>
+        <article>
+          <h2 style="text-wrap: balance">
+            Atari and Bandai Namco announce the Atari 2600+ Pac-Man Edition!
+          </h2>
+          <!-- prettier-ignore -->
+          <p class="pretty">Atari has announced a limited edition of its Atari 2600+ console to celebrate PAC-MAN's 45th anniversary. The bright yellow console launches alongside limited edition CX-40+ wireless joysticks modeled after PAC-MAN and the Ghost Gang and a collection of four games.</p>
+          <img
+            src="/assets/img/atari2600+.png"
+            alt="Atari 2600+ Pac-Man Edition"
+          />
+        </article>
+      </div>
+    </main>
+
+    <div>
+      <gg-baseline feature="textWrapBalance"></gg-baseline>
+      <gg-baseline feature="textWrapPretty"></gg-baseline>
+    </div>
+  </body>
+</html>

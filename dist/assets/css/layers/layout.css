@@ -2,7 +2,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
-  row-gap: 2rem;
+  row-gap: 1rem;
   overflow: hidden;
   margin: 0;
 }
@@ -27,6 +27,7 @@ main {
 
 footer {
   grid-row: 3;
+  margin-inline: 1rem;
 }
 
 .mdn {

@@ -87,6 +87,7 @@
   padding-inline-start: 4rem;
   background-size: 3rem;
   align-content: center;
+  border-radius: 4px;
 }
 
 .limited {

@@ -18,8 +18,7 @@ export const headerData = {
     { name: "popover", pages: 3 },
     { name: "registeredCustomProperties", pages: 4 },
     { name: "relativeColors", pages: 3 },
-    { name: "textWrapBalance", pages: 3 },
-    { name: "textWrapPretty", pages: 3 },
+    { name: "textWrap", pages: 1 },
   ],
   features: {
     function: {
@@ -72,8 +71,8 @@ export const headerData = {
       description:
         "Mutually Exclusive Details Elements allow developers to create interactive disclosure widgets where only one details element can be open at a time, improving user experience and accessibility.",
     },
-    textWrapBalance: {
-      title: "text wrap balance",
+    textWrap: {
+      title: "text wrap",
       description:
         "Text Wrap Balance is a CSS feature that enables more control over how text is wrapped within a container, allowing for better alignment and distribution of text content.",
     },
