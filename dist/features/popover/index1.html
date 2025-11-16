@@ -6,12 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      main > div.wrapper2 {
+        display: flex;
+        gap: 2rem;
+        margin: 0 auto;
+      }
+
+      #pacman-wrapper {
+        position: relative;
+      }
+
+      #pacman {
+        position: absolute;
+        top: 1rem;
+        left: 5px;
+        padding: 1rem;
+        img {
+          width: 100px;
+        }
+      }
+    </style>
   </head>
   <body>
     <gg-header feature="popover" page="1"></gg-header>
 
-    <main></main>
+    <main>
+      <div class="wrapper">
+        <pre class="hide"><code class="language-css">
+/* Sass (SCSS) */
+
+.ghost {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+
+
+  .blinky {
+    color: red;
+  }
+
+  .clyde {
+    color: orange;
+    margin: 20px
+  }
+}
+
+</code></pre>
+
+        <div id="pacman-wrapper">
+          <button id="anchor" popovertarget="pacman">Open Popover</button>
+
+          <div id="pacman" popover>
+            <img src="/assets/img/pacman.svg" alt="Pac-Man" />
+          </div>
+        </div>
+      </div>
+    </main>
 
     <gg-baseline feature="popover"></gg-baseline>
   </body>

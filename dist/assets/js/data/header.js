@@ -16,7 +16,7 @@ export const headerData = {
     { name: "nesting", pages: 4 },
     { name: "function", pages: 3 },
     { name: "popover", pages: 3 },
-    { name: "registeredCustomProperties", pages: 3 },
+    { name: "registeredCustomProperties", pages: 4 },
     { name: "relativeColors", pages: 3 },
     { name: "textWrapBalance", pages: 3 },
     { name: "textWrapPretty", pages: 3 },

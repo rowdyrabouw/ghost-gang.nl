@@ -6,11 +6,87 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+
+      @property --width {
+        syntax: "<length>";
+        inherits: false;
+        initial-value: 200px;
+      }
+
+      main {
+        display: flex;
+        gap: 4rem;
+        margin: 0 auto;
+      }
+      .ghosts {
+        width: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        .ghost {
+          border: 1px solid rgb(86, 196, 203);
+          width: var(--width);
+          display: inline-block;
+          padding: 1rem;
+        }
+      }
+
+      .large {
+        --width: 300;
+      }
+    </style>
   </head>
   <body>
     <gg-header feature="registeredCustomProperties" page="3"></gg-header>
 
-    <main></main>
+    <main>
+      <div>
+        <pre class="hide"><code class="language-css">
+/* registered custom property */                         
+@property --width {
+  syntax: "&lt;length&gt;";
+  inherits: false;
+  initial-value: 200px;
+}
+
+.ghost {
+  width: var(--width);
+}
+
+</code></pre>
+
+        <pre class="hide"><code class="language-html">
+&lt;span class="ghost"&gt;
+  &lt;img src="/assets/img/blinky-right.svg" alt="Blinky" /&gt;
+&lt;/span&gt;
+
+&lt;span class="ghost large"&gt;
+  &lt;img src="/assets/img/pinky-left.svg" alt="Pinky" /&gt;
+&lt;/span&gt;
+
+</code></pre>
+        <pre class="hide"><code class="language-css">
+.large {                                                 
+  --width: 300; /* wrong value */
+}
+
+</code></pre>
+      </div>
+      <div class="ghosts">
+        <span class="ghost">
+          <img src="/assets/img/blinky-right.svg" alt="Blinky" />
+        </span>
+        <span class="ghost large">
+          <img src="/assets/img/pinky-left.svg" alt="Pinky" />
+        </span>
+      </div>
+    </main>
 
     <gg-baseline feature="registeredCustomProperties"></gg-baseline>
   </body>

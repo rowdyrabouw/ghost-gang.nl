@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+
+      main {
+        display: flex;
+        gap: 4rem;
+        margin: 0 auto;
+      }
+      .ghosts {
+        width: 650px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      :root {
+        --c1: hsl(185, 44%, 62%); /* inky */
+        --c2: hsl(353, 65%, 81%); /* pinky */
+      }
+
+      .box {
+        width: 300px;
+        height: 300px;
+        border-radius: 16px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .box::after {
+        content: attr(data-label);
+        position: absolute;
+        left: 8px;
+        bottom: 8px;
+        font-size: 14px;
+        opacity: 0.75;
+        background: rgba(255, 255, 255, 0.6);
+        padding: 0.15rem 0.45rem;
+        border-radius: 0.4rem;
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+        color: rgb(0, 0, 0);
+      }
+
+      /* LEFT BOX: old way -> stop jumps */
+      .old {
+        --old-stop: 0%;
+        background: linear-gradient(
+          135deg,
+          var(--c1) 0%,
+          var(--c1) var(--old-stop),
+          var(--c2) var(--old-stop),
+          var(--c2) 100%
+        );
+        transition: --old-stop 1s ease; /* discrete jump */
+      }
+      .old:hover {
+        --old-stop: 100%;
+      }
+
+      /* RIGHT BOX: stop animates smoothly */
+      @property --stop {
+        syntax: "<percentage>";
+        inherits: false;
+        initial-value: 0%;
+      }
+      .registered-custom-property {
+        /* --stop: 10%; */
+        background: linear-gradient(
+          135deg,
+          var(--c1) 0%,
+          var(--c1) var(--stop),
+          var(--c2) var(--stop),
+          var(--c2) 100%
+        );
+        transition: --stop 1s ease;
+
+        &:hover {
+          --stop: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <gg-header feature="registeredCustomProperties" page="4"></gg-header>
+
+    <main>
+      <div>
+        <pre class="hide"><code class="language-css">
+:root {
+  --c1: hsl(185, 44%, 62%); /* inky */
+  --c2: hsl(353, 65%, 81%); /* pinky */
+}
+
+@property --stop {
+  syntax: "&lt;percentage&gt;";
+  inherits: false;
+  initial-value: 0%;
+}
+
+.registered-custom-property {
+  background: linear-gradient(
+    135deg,
+    var(--c1) 0%,
+    var(--c1) var(--stop),
+    var(--c2) var(--stop),
+    var(--c2) 100%
+  );
+
+  transition: --stop 1s ease;
+
+  &:hover {
+    --stop: 100%;
+  }
+}
+
+</code></pre>
+      </div>
+      <div class="ghosts">
+        <div class="box old" data-label="without @property"></div>
+        <div
+          class="box registered-custom-property"
+          data-label="with @property"
+        ></div>
+      </div>
+    </main>
+
+    <gg-baseline feature="registeredCustomProperties"></gg-baseline>
+
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@property"
+      target="_blank"
+      class="mdn"
+    >
+      <img src="/assets/img/cherry.svg" alt="" />
+      <span class="sr-only">MDN Documentation</span>
+    </a>
+  </body>
+</html>
