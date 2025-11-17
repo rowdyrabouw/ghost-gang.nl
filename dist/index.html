@@ -8,35 +8,86 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
     <style>
-      body {
-        overflow: auto;
+      div {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        flex-wrap: wrap;
+        &:first-child {
+          margin-block-start: 2rem;
+        }
+        &:last-child {
+          margin-block-end: 2rem;
+        }
+      }
+      main {
+        padding-inline: 4rem;
+        align-content: center;
+
+        h1 {
+          text-align: center;
+          margin-block-end: 4rem;
+        }
+      }
+      a {
+        font-size: 1.5rem;
+        color: rgb(255, 255, 255);
+        text-underline-offset: 8px;
+        gap: 48px;
+      }
+      img {
+        width: 160px;
       }
     </style>
   </head>
   <body>
-    <img
-      src="/assets/img/pacman-arcade.png"
-      alt=""
-      height="600px"
-      style="margin: 0 auto"
-    />
-    <gg-baseline feature="accentColor"></gg-baseline>
-    <gg-baseline feature="mediaQueriesRangeSyntax"></gg-baseline>
-    <gg-baseline feature="containerQueries"></gg-baseline>
-    <gg-baseline feature="cascadeLayers"></gg-baseline>
-    <gg-baseline feature="colorScheme"></gg-baseline>
-    <gg-baseline feature="dialog"></gg-baseline>
-    <gg-baseline feature="crossDocumentViewTransitions"></gg-baseline>
-    <gg-baseline feature="registeredCustomProperties"></gg-baseline>
-    <gg-baseline feature="mutuallyExclusiveDetailsElements"></gg-baseline>
-    <gg-baseline feature="textWrapBalance"></gg-baseline>
-    <gg-baseline feature="textWrapPretty"></gg-baseline>
-    <gg-baseline feature="colorMix"></gg-baseline>
-    <gg-baseline feature="colorSpaces"></gg-baseline>
-    <gg-baseline feature="relativeColors"></gg-baseline>
-    <gg-baseline feature="popover"></gg-baseline>
-    <gg-baseline feature="alignContentBlockLayouts"></gg-baseline>
-    <gg-baseline feature="backdropFilter"></gg-baseline>
-    <gg-baseline feature="fieldSizing"></gg-baseline>
+    <div>
+      <img src="/assets/img/pacman-left.svg" alt="Pacman" />
+      <img src="/assets/img/blinky-left.svg" alt="Blinky" />
+      <img src="/assets/img/pinky-left.svg" alt="Pinky" />
+      <img src="/assets/img/inky-left.svg" alt="Inky" />
+      <img src="/assets/img/clyde-left.svg" alt="Clyde" />
+    </div>
+    <main>
+      <h1 style="flex: 1">navigating the html and css maze</h1>
+      <div>
+        <a href="/features/accentColor/index1.html">accent color</a>
+        <a href="/features/alignContentBlockLayouts/index1.html"
+          >align-content for block layouts</a
+        >
+        <a href="/features/backdropFilter/index1.html">backdrop-filter</a>
+        <a href="/features/cascadeLayers/index1.html">cascade layers</a>
+        <a href="/features/colorMix/index1.html">color mix</a>
+        <a href="/features/colorScheme/index1.html">color scheme</a>
+        <a href="/features/colorSpaces/index1.html">color spaces</a>
+        <a href="/features/containerQueries/index1.html">container queries</a>
+        <a href="/features/crossDocumentViewTransitions/index1.html">
+          cross-document view transitions
+        </a>
+        <a href="/features/dialog/index1.html">dialog</a>
+        <a href="/features/fieldSizing/index1.html">field sizing</a>
+        <a href="/features/function/index1.html">@function</a>
+        <a href="/features/mediaQueriesRangeSyntax/index1.html">
+          media queries range syntax
+        </a>
+        <a href="/features/mutuallyExclusiveDetailsElements/index1.html">
+          mutually exclusive details elements
+        </a>
+        <a href="/features/nesting/index1.html">nesting</a>
+        <a href="/features/popover/index1.html">popover</a>
+        <a href="/features/registeredCustomProperties/index1.html">
+          registered custom properties
+        </a>
+        <a href="/features/relativeColors/index1.html">relative colors</a>
+        <a href="/features/textWrap/index1.html">text wrap</a>
+      </div>
+    </main>
+    <div>
+      <img src="/assets/img/pacman-right.svg" alt="Pacman" />
+      <img src="/assets/img/ghost.svg" alt="Ghost" />
+      <img src="/assets/img/ghost.svg" alt="Ghost" />
+      <img src="/assets/img/ghost.svg" alt="Ghost" />
+      <img src="/assets/img/ghost.svg" alt="Ghost" />
+    </div>
   </body>
 </html>
