@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ghost Gang</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      article {
+        color: light-dark(#060606, #fdbb10);
+        background-color: light-dark(#f1f3f4, #060606);
+
+        &.dark {
+          color-scheme: dark;
+        }
+      }
+      main > div {
+        margin-bottom: 1rem;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+      }
+      article {
+        max-width: 80ch;
+        margin: 0 auto;
+        line-height: 1.5;
+        font-size: 1.25rem;
+        text-wrap: pretty;
+        padding: 1rem 0.5rem 0.5rem 2rem;
+
+        h2 {
+          margin-block-start: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <gg-header feature="colorScheme" page="4"></gg-header>
+
+    <main>
+      <div>
+        <pre class="hide"><code class="language-css">
+:root {
+  color-scheme: light dark;
+}
+
+section {
+  color: light-dark(#060606, #fdbb10);
+  background-color: light-dark(#f1f3f4, #060606);
+  &.dark {
+    color-scheme: dark;
+  }
+}
+      </code></pre>
+      </div>
+      <div>
+        <article>
+          <h2>Inspired by Pizza</h2>
+          <p class="dark">
+            Pac-Man was created by Japanese designer Toru Iwatani and released
+            by Namco in Japan in 1980, quickly becoming a global phenomenon. The
+            game, originally named "Puck-Man", was inspired by the shape of a
+            pizza with a slice missing and the Japanese phrase for the sound of
+            chomping.
+          </p>
+        </article>
+
+        <article class="dark">
+          <h2>Inspired by Pizza</h2>
+          <p class="dark">
+            Pac-Man was created by Japanese designer Toru Iwatani and released
+            by Namco in Japan in 1980, quickly becoming a global phenomenon. The
+            game, originally named "Puck-Man", was inspired by the shape of a
+            pizza with a slice missing and the Japanese phrase for the sound of
+            chomping.
+          </p>
+        </article>
+      </div>
+    </main>
+
+    <gg-baseline feature="colorScheme"></gg-baseline>
+
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/color-scheme"
+      target="_blank"
+      class="mdn"
+    >
+      <img src="/assets/img/cherry.svg" alt="" />
+      <span class="sr-only">MDN documentation</span>
+    </a>
+  </body>
+</html>

@@ -5,6 +5,7 @@ import { Baseline } from "./baseline.js";
 // hightlighting code
 import hljs from "./libs/highlight/core.js";
 import javascript from "./libs/highlight/javascript.js";
+import yaml from "./libs/highlight/yaml.js";
 import css from "./libs/highlight/css.js";
 import xml from "./libs/highlight/xml.js";
 
@@ -19,6 +20,7 @@ customElements.define("gg-baseline", Baseline);
 hljs.registerLanguage("javascript", javascript);
 hljs.registerLanguage("css", css);
 hljs.registerLanguage("xml", xml);
+hljs.registerLanguage("yaml", yaml);
 hljs.highlightAll();
 
 const preElements = document.querySelectorAll("pre");
@@ -80,4 +82,18 @@ window.addEventListener("load", () => {
   });
 
   listener.start();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowRight") {
+    const next = document.querySelector("#next");
+    if (next) {
+      next.click();
+    }
+  } else if (e.key === "ArrowLeft") {
+    const previous = document.querySelector("#previous");
+    if (previous) {
+      previous.click();
+    }
+  }
 });

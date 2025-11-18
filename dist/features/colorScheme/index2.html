@@ -8,20 +8,13 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
     <style>
+      :root {
+        color-scheme: light dark;
+      }
+
       body {
         color: unset;
         background-color: unset;
-      }
-      html {
-        &:has(#optionAuto:checked) {
-          color-scheme: light dark;
-        }
-        &:has(#optionLight:checked) {
-          color-scheme: light;
-        }
-        &:has(#optionDark:checked) {
-          color-scheme: dark;
-        }
       }
       main > div {
         margin-bottom: 1rem;
@@ -49,30 +42,10 @@
     <main>
       <div>
         <pre class="hide"><code class="language-css">
-.item {
-  container-type: inline-size;
+:root {
+  color-scheme: light dark;
 }
       </code></pre>
-        <fieldset>
-          <legend>&nbsp;Theme&nbsp;</legend>
-
-          <div class="nice-layout">
-            <input
-              checked
-              type="radio"
-              id="optionAuto"
-              name="choice"
-              value="0"
-            />
-            <label for="optionAuto">Auto</label>
-
-            <input type="radio" id="optionLight" name="choice" value="1" />
-            <label for="optionLight">Light</label>
-
-            <input type="radio" id="optionDark" name="choice" value="2" />
-            <label for="optionDark">Dark</label>
-          </div>
-        </fieldset>
       </div>
       <section>
         <h2>Inspired by Pizza</h2>

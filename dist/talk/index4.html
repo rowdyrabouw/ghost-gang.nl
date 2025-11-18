@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="module" src="assets/js/script.js" defer></script>
+    <style>
+      main {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        /* justify-items: center; */
+        align-items: center;
+        margin: 0 auto;
+
+        color: rgb(255 255 255);
+        font-size: 2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        div {
+          align-content: center;
+        }
+        img {
+          height: 30vh;
+          /* float: left; */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <img src="/assets/img/blinky-right.svg" alt="Blinky" />
+        Blinky chases you
+      </div>
+      <div>
+        <img src="/assets/img/pinky-right.svg" alt="Pinky" />
+        Pinky ambushes you
+      </div>
+      <div>
+        <img src="/assets/img/inky-right.svg" alt="Inky" />
+        Inky is unpredictable
+      </div>
+      <div>
+        <img src="/assets/img/clyde-right.svg" alt="Clyde" />
+        Clyde is... chaos
+      </div>
+    </main>
+    <audio id="audio" src="/assets/mp3/ghosts.mp3" autoplay></audio>
+  </body>
+</html>

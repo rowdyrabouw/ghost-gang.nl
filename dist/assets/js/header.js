@@ -3,7 +3,8 @@ import { headerData } from "./data/header.js";
 export class Header extends HTMLElement {
   constructor() {
     super();
-    this.data = headerData;
+    this.data =
+      JSON.parse(localStorage.getItem("shuffledHeaderData")) || headerData;
   }
 
   static get observedAttributes() {
@@ -35,7 +36,9 @@ export class Header extends HTMLElement {
     const nextItem = navigationData[currentIndex + 1];
     const totalPages = navigationData[currentIndex].pages;
 
-    window.document.title = featureData.title;
+    window.document.title = featureData.title.replace(/\b\w/g, (l) =>
+      l.toUpperCase()
+    );
 
     let previousLink;
     if (page === "1" && prevItem) {

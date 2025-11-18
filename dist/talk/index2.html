@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ghost Gang</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="module" src="assets/js/script.js" defer></script>
+    <style>
+      img.arcade {
+        margin: 0 auto;
+        display: block;
+        filter: drop-shadow(0 0 10px rgb(253, 187, 16));
+        height: 600px;
+      }
+
+      .grow {
+        animation: grow 6s ease-in-out;
+      }
+
+      @keyframes grow {
+        from {
+          height: 0px;
+        }
+        to {
+          height: 600px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img class="arcade grow" src="/assets/img/pacman-arcade.png" alt="" />
+    </main>
+  </body>
+</html>

@@ -11,8 +11,20 @@
   <body>
     <gg-header feature="relativeColors" page="1"></gg-header>
 
-    <main></main>
+    <main>
+      <pre class="hide"><code class="language-yaml">
+color-function(from origin-color channel1 channel2 channel3 / alpha)
 
+# color-function: the color function you want to use (e.g. rgb, hsl, lab, lch)
+
+# origin-color: the color you want to take the values from
+
+# channel1, channel2, channel3: the color channels you want to use
+#                          (e.g. red, green, blue, hue, saturation, lightness)
+
+# alpha: optional alpha value for transparency
+  </code></pre>
+    </main>
     <gg-baseline feature="relativeColors"></gg-baseline>
   </body>
 </html>

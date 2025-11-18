@@ -1,0 +1,21 @@
+@view-transition {
+  navigation: auto;
+}
+
+body {
+  display: grid;
+  background-color: #060606;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+main {
+  align-content: center;
+  height: 100%;
+}
+
+audio {
+  display: none;
+}

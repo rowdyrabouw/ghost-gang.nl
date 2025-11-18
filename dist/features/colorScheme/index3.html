@@ -9,22 +9,13 @@
     <script type="module" src="/assets/js/script.js" defer></script>
     <style>
       :root {
-        color-scheme: light dark;
-      }
-      .dark {
-        /* forces dark color-scheme */
-        color-scheme: dark;
-        color: light-dark(#060606, #f1f3f4);
-        background-color: light-dark(#f1f3f4, #060606);
-      }
-      html {
-        &:has(#optionAuto:checked) {
+        &:has(#system:checked) {
           color-scheme: light dark;
         }
-        &:has(#optionLight:checked) {
+        &:has(#light:checked) {
           color-scheme: light;
         }
-        &:has(#optionDark:checked) {
+        &:has(#dark:checked) {
           color-scheme: dark;
         }
       }
@@ -56,18 +47,15 @@
       <div>
         <pre class="hide"><code class="language-css">
 :root {
-  color-scheme: light dark;
-
-  color: light-dark(black, white);
-  background: light-dark(white, black);
-}
-
-.light {
-  color-scheme: light;
-}
-
-.dark {
-  color-scheme: dark;
+  &:has(#system:checked) {
+    color-scheme: light dark;
+  }
+  &:has(#light:checked) {
+    color-scheme: light;
+  }
+  &:has(#dark:checked) {
+    color-scheme: dark;
+  }
 }
       </code></pre>
         <fieldset>
@@ -75,25 +63,25 @@
 
           <div class="nice-layout">
             <input
-              checked
               type="radio"
-              id="optionAuto"
+              id="system"
               name="choice"
-              value="0"
+              value="system"
+              checked
             />
-            <label for="optionAuto">Auto</label>
+            <label for="system">System</label>
 
-            <input type="radio" id="optionLight" name="choice" value="1" />
-            <label for="optionLight">Light</label>
+            <input type="radio" id="light" name="choice" value="light" />
+            <label for="light">Light</label>
 
-            <input type="radio" id="optionDark" name="choice" value="2" />
-            <label for="optionDark">Dark</label>
+            <input type="radio" id="dark" name="choice" value="dark" />
+            <label for="dark">Dark</label>
           </div>
         </fieldset>
       </div>
       <section class="dark">
         <h2>Inspired by Pizza</h2>
-        <p>
+        <p class="dark">
           Pac-Man was created by Japanese designer Toru Iwatani and released by
           Namco in Japan in 1980, quickly becoming a global phenomenon. The
           game, originally named "Puck-Man", was inspired by the shape of a
@@ -106,14 +94,5 @@
     </main>
 
     <gg-baseline feature="colorScheme"></gg-baseline>
-
-    <a
-      href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/color-scheme"
-      target="_blank"
-      class="mdn"
-    >
-      <img src="/assets/img/cherry.svg" alt="" />
-      <span class="sr-only">MDN documentation</span>
-    </a>
   </body>
 </html>

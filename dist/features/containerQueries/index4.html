@@ -11,6 +11,54 @@
       main {
         margin: 0 auto;
       }
+      .item {
+        container-type: inline-size;
+        width: 178px;
+        resize: both;
+        overflow: auto;
+        text-align: center;
+        align-content: center;
+        border: 4px dashed rgb(232, 44, 39);
+        border-radius: 16px;
+        padding: 32px;
+        margin: 0 auto;
+      }
+
+      .images {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+
+        & div {
+          text-align: center;
+        }
+
+        & img {
+          display: block;
+        }
+      }
+
+      h2 {
+        margin-block-start: 0;
+        margin-block-end: 0.5rem;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      @container (min-width: 0) {
+        h2 {
+          font-size: clamp(1.25rem, 10px + 3.33cqw, 45px);
+        }
+        .images img {
+          width: clamp(30px, 5px + 8cqi, 90px);
+        }
+
+        & span {
+          font-size: clamp(10px, 8px + 1.33cqw, 40px);
+        }
+      }
     </style>
   </head>
   <body>
@@ -26,8 +74,60 @@ img {
   width: clamp(30px, 5px + 8cqi, 90px);
 }
       </code></pre>
+
+      <p id="fontSize"></p>
+      <div class="item">
+        <article class="card">
+          <h2>The Ghost Gang</h2>
+          <div class="images">
+            <div>
+              <img src="/assets/img/blinky-right.svg" alt="" id="blinky" />
+              <span>Blinky</span>
+            </div>
+            <div>
+              <img src="/assets/img/pinky-right.svg" alt="" />
+              <span>Pinky</span>
+            </div>
+            <div>
+              <img src="/assets/img/inky-left.svg" alt="" />
+              <span>Inky</span>
+            </div>
+            <div>
+              <img src="/assets/img/clyde.svg" alt="" />
+              <span>Clyde</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p id="svgSize"></p>
     </main>
 
     <gg-baseline feature="containerQueries"></gg-baseline>
+
+    <a
+      href="https://ishadeed.com/article/css-container-query-guide/#container-query-units"
+      target="_blank"
+      class="mdn"
+    >
+      <img src="/assets/img/cherry.svg" alt="" />
+      <span class="sr-only">An Interactive Guide to CSS Container Queries</span>
+    </a>
+
+    <script>
+      const heading = document.querySelector("h2");
+      const svg = document.querySelector("#blinky");
+      const fontResizeObserver = new ResizeObserver(() => {
+        document.querySelector("#fontSize").textContent = `Heading font size: ${
+          getComputedStyle(heading).fontSize
+        }`;
+      });
+      fontResizeObserver.observe(heading);
+      const svgResizeObserver = new ResizeObserver(() => {
+        document.querySelector("#svgSize").textContent = `Image width: ${
+          getComputedStyle(svg).width
+        }`;
+      });
+      svgResizeObserver.observe(svg);
+    </script>
   </body>
 </html>

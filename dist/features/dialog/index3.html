@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
     <style>
+      @view-transition {
+        navigation: auto;
+      }
       dialog {
         padding: 1.5rem;
         & button {
@@ -17,7 +20,8 @@
         }
         & img {
           width: 100px;
-          margin: 3rem;
+          margin: 2rem auto;
+          display: block;
         }
       }
     </style>
@@ -30,6 +34,7 @@
         <pre class="hide"><code class="language-html">
 &lt;dialog id="dialog"&gt;
 
+  &lt;p&gt;The cherry is worth 100 points.&lt;/p&gt;
   &lt;img src="/assets/img/cherry.svg" alt="Cherry" /&gt;
 
   &lt;button commandfor="dialog" command="close"&gt;Close&lt;/button&gt;
@@ -41,6 +46,7 @@
       </div>
       <div>
         <dialog id="dialog">
+          <p>The cherry is worth 100 points.</p>
           <img src="/assets/img/cherry.svg" alt="Cherry" />
           <button commandfor="dialog" command="close">Close</button>
         </dialog>
