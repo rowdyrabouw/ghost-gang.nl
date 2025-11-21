@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ghost Gang</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script type="module" src="/assets/js/script.js" defer></script>
+    <script type="module" src="assets/js/movable-anchor.js" defer></script>
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+      #anchor {
+        anchor-name: --my-anchor;
+        cursor: none;
+      }
+
+      #positionedElement {
+        position: absolute;
+        position-anchor: --my-anchor;
+        position-area: bottom right;
+        position-try: flip-block, flip-inline, flip-block flip-inline;
+        border: none;
+        background: rgb(255 255 255 / 0.2);
+        border-radius: 8px;
+
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      .menu-item {
+        display: flex;
+        align-items: center;
+        font-size: 1.125rem;
+        padding: 0.5rem;
+
+        img {
+          width: 50px;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <gg-header feature="popover" page="5"></gg-header>
+
+    <main>
+      <pre class="hide"><code class="language-css">
+/* provide fallback options */
+
+[popover] {
+  inset: unset;
+  position: absolute;
+  position-anchor: --pacman;
+  position-area: bottom right;
+  position-try: flip-block, flip-inline, flip-block flip-inline;
+}
+  </code></pre>
+      <movable-anchor id="anchor">
+        <img
+          src="/assets/img/pacman.svg"
+          alt="Pac-man"
+          style="width: 100px; height: auto"
+        />
+      </movable-anchor>
+      <div id="positionedElement">
+        <ul>
+          <li class="menu-item">
+            <img src="/assets/img/blinky-right.svg" alt="Blinky" />
+          </li>
+
+          <li class="menu-item">
+            <img src="/assets/img/inky-right.svg" alt="Inky" />
+          </li>
+
+          <li class="menu-item">
+            <img src="/assets/img/pinky-right.svg" alt="Pinky" />
+          </li>
+
+          <li class="menu-item">
+            <img src="/assets/img/clyde-right.svg" alt="Clyde" />
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <gg-baseline feature="anchorPositioning"></gg-baseline>
+
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Anchor_positioning/Using"
+      target="_blank"
+      class="mdn"
+    >
+      <img src="/assets/img/cherry.svg" alt="" />
+      <span class="sr-only">MDN Documentation</span>
+    </a>
+  </body>
+</html>

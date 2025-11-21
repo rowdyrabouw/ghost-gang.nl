@@ -9,23 +9,16 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
     <style>
-      main > div.wrapper2 {
-        display: flex;
-        gap: 2rem;
-        margin: 0 auto;
-      }
-
-      #pacman-wrapper {
-        position: relative;
-      }
-
       #pacman {
-        position: absolute;
-        top: 1rem;
-        left: 5px;
+        width: 440px;
         padding: 1rem;
+        div {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
         img {
-          width: 100px;
+          width: 150px;
         }
       }
     </style>
@@ -34,34 +27,31 @@
     <gg-header feature="popover" page="1"></gg-header>
 
     <main>
-      <div class="wrapper">
-        <pre class="hide"><code class="language-css">
-/* Sass (SCSS) */
+      <pre class="hide"><code class="language-html">
+&lt;button popovertarget="pacman"&gt;Open Popover&lt;/button&gt;
 
-.ghost {
-  width: 100px;
-  height: 100px;
-  margin: 10px;
+&lt;!-- popover = auto (or none), hint, or manual --&gt;
+&lt;div id="pacman" popover="auto"&gt;
+  &lt;div&gt;
+    &lt;img src="/assets/img/pacman.svg" alt="Pac-Man" /&gt;
+    &lt;p&gt;
+      The original Pac-Man game is astonishingly compact, 
+      with a total file size of under 24 kilobytes.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+  </code></pre>
 
+      <div>
+        <button popovertarget="pacman">Open Popover</button>
 
-  .blinky {
-    color: red;
-  }
-
-  .clyde {
-    color: orange;
-    margin: 20px
-  }
-}
-
-</code></pre>
-
-        EXPLAIN popover here
-        <div id="pacman-wrapper">
-          <button id="anchor" popovertarget="pacman">Open Popover</button>
-
-          <div id="pacman" popover>
+        <div id="pacman" popover>
+          <div>
             <img src="/assets/img/pacman.svg" alt="Pac-Man" />
+            <p>
+              The original Pac-Man game is astonishingly compact, with a total
+              file size of under 24 kilobytes.
+            </p>
           </div>
         </div>
       </div>

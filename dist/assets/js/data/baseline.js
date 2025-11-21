@@ -937,4 +937,48 @@ export const baselineData = {
       },
     },
   },
+  anchorPositioning: {
+    status: "limited",
+    name: "Anchor Positioning",
+    support: {
+      chrome: {
+        name: "Chrome",
+        level: "full",
+        version: 125,
+        date: "2024-05-14",
+      },
+      chromeAndroid: {
+        name: "Chrome Android",
+        level: "full",
+        version: 125,
+        date: "2024-05-14",
+      },
+      edge: {
+        name: "Edge",
+        level: "full",
+        version: 125,
+        date: "2024-05-17",
+      },
+      firefox: {
+        name: "Firefox",
+        level: "no",
+      },
+      firefoxAndroid: {
+        name: "Firefox Android",
+        level: "no",
+      },
+      safari: {
+        name: "Safari",
+        level: "full",
+        version: 26,
+        date: "2025-09-15",
+      },
+      safariIOS: {
+        name: "Safari iOS",
+        level: "full",
+        version: 26,
+        date: "2025-09-15",
+      },
+    },
+  },
 };

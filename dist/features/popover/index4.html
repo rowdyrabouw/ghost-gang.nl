@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ghost Gang</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="module" src="/assets/js/script.js" defer></script>
+    <script type="module" src="assets/js/anchor-showcase.js" defer></script>
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+      main {
+        display: flex;
+        gap: 14rem;
+        margin: 0 auto;
+
+        img {
+          width: 100px;
+          height: auto;
+        }
+
+        li img {
+          width: 50px;
+          height: auto;
+        }
+      }
+
+      button {
+        anchor-name: --pacman;
+        background: rgb(255 255 255 / 0.2);
+        padding: 0;
+        border-radius: 8px;
+
+        &:active {
+          transform: scale(0.97);
+        }
+      }
+
+      [popover] {
+        inset: unset;
+        position: absolute;
+        position-anchor: --pacman;
+        position-area: var(--variant-pos-area);
+        border: none;
+        background: rgb(255 255 255 / 0.2);
+        border-radius: 8px;
+      }
+
+      [popover] ul {
+        list-style: none;
+        margin: 0;
+        padding: 1rem;
+      }
+
+      .menu-item {
+        display: flex;
+        gap: 8px;
+        padding-block: 0.5rem;
+        align-items: center;
+        font-size: 1.125rem;
+      }
+    </style>
+  </head>
+  <body>
+    <gg-header feature="popover" page="4"></gg-header>
+
+    <main>
+      <pre class="hide"><code class="language-css">
+/* anchor positioning */
+
+button {
+  anchor-name: --pacman;
+}
+
+[popover] {
+  inset: unset;
+  position: absolute;
+  position-anchor: --pacman;
+  position-area: bottom right;
+}
+  </code></pre>
+
+      <div>
+        <button popovertarget="popover" popovertargetaction="show">
+          <img src="/assets/img/pacman.svg" alt="Pac-man" />
+        </button>
+
+        <div id="popover" popover="manual" aria-labelledby="menu-title">
+          <ul>
+            <li class="menu-item">
+              <img src="/assets/img/blinky-right.svg" alt="Blinky" />
+              <span>Blinky</span>
+            </li>
+
+            <li class="menu-item">
+              <img src="/assets/img/inky-right.svg" alt="Inky" />
+              <span>Inky</span>
+            </li>
+
+            <li class="menu-item">
+              <img src="/assets/img/pinky-right.svg" alt="Pinky" />
+              <span>Pinky</span>
+            </li>
+
+            <li class="menu-item">
+              <img src="/assets/img/clyde-right.svg" alt="Clyde" />
+              <span>Clyde</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="controlPanel"></div>
+    </main>
+
+    <gg-baseline feature="anchorPositioning"></gg-baseline>
+  </body>
+</html>

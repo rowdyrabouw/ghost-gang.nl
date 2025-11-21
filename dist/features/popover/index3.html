@@ -6,12 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      @keyframes slideInFromBottom {
+        from {
+          transform: translateX(-50%) translateY(200%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(-50%) translateY(0);
+          opacity: 1;
+        }
+      }
+
+      :popover-open {
+        position: absolute;
+        inset: unset;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 100px;
+        padding: 1rem 1.5rem;
+        animation: slideInFromBottom 2s ease-out;
+      }
+
+      #gameover {
+        background-color: rgb(231 41 38 / 0.9);
+        border: 2px solid rgb(253, 180, 23);
+        border-radius: 8px;
+        color: rgb(255, 255, 255);
+        font-family: Namco, "Joystix", Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2rem;
+      }
+    </style>
   </head>
   <body>
     <gg-header feature="popover" page="3"></gg-header>
 
-    <main></main>
+    <main>
+      <pre class="hide"><code class="language-css">
+@keyframes slideInFromBottom {
+  from {
+    transform: translateX(-50%) translateY(200%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+:popover-open {
+  inset: unset;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100px;
+  animation: slideInFromBottom 2s ease-out;
+}
+  </code></pre>
+
+      <button popovertarget="gameover">Toast</button>
+      <div id="gameover" popover="manual">game over</div>
+    </main>
 
     <gg-baseline feature="popover"></gg-baseline>
   </body>
