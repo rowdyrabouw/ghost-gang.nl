@@ -21,5 +21,7 @@ localStorage.setItem("shuffledHeaderData", JSON.stringify(headerData));
 if (headerData.navigation.length > 0) {
   console.info("headerData.navigation[0]", headerData.navigation[0]);
   const firstItem = headerData.navigation[0];
-  window.location.href = `/features/${firstItem.name}/index1.html`;
+  setTimeout(() => {
+    window.location.href = `/features/${firstItem.name}/index1.html?talk=true`;
+  }, 6200);
 }

@@ -2,6 +2,11 @@
   navigation: auto;
 }
 
+@font-face {
+  font-family: "Namco";
+  src: url("../../../assets/fonts/namco.woff2") format("woff2");
+}
+
 body {
   display: grid;
   background-color: #060606;
@@ -18,4 +23,13 @@ main {
 
 audio {
   display: none;
+}
+
+h1 {
+  font-family: Namco, "Joystix", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 5rem;
+  margin: 0;
+  color: white;
+  line-height: 1.5;
+  text-shadow: 0 0 8px #ed2024, 0 0 12px #ed2024, 0 0 24px #ed2024;
 }

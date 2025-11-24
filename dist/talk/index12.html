@@ -8,27 +8,19 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="assets/js/script.js" defer></script>
     <style>
-      body {
-        background-color: #e52525;
-        animation: colorTransition 3s ease-in-out forwards;
-      }
       .svg {
         margin: 0 auto;
         display: block;
         text-align: center;
         font-size: 48px;
-        color: #e52525;
+        color: #fe8111;
+        p {
+          font-size: 32px;
+          margin-inline: 148px;
+        }
       }
       svg {
-        height: 80vh;
-      }
-      @keyframes colorTransition {
-        from {
-          background-color: #e52525;
-        }
-        to {
-          background-color: transparent;
-        }
+        height: 60vh;
       }
     </style>
   </head>
@@ -78,7 +70,14 @@
           </g>
         </g>
       </svg>
-      <div>Blinky chases you</div>
+      <div>
+        performance and platform features
+        <p>
+          :has(). :is(). :where(). @scope. Cascade layers. View transitions.
+          Nesting. New features ship faster than we can explain them to our
+          teammates.
+        </p>
+      </div>
     </div>
   </body>
 </html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigating the HTML and CSS maze</title>
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="module" src="assets/js/script.js" defer></script>
+    <style>
+      body {
+        background-color: #fdb814;
+        color: rgb(0 0 0);
+        font-family: "Joystix";
+      }
+      main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        & > div {
+          align-content: center;
+        }
+      }
+      div.image {
+        position: relative;
+        width: 600px;
+        height: 600px;
+        margin-inline-start: -50px;
+      }
+      img {
+        display: block;
+        width: 95%;
+        height: auto;
+        position: absolute;
+      }
+      svg {
+        position: absolute;
+      }
+      h1 {
+        font-size: 5rem;
+        text-shadow: none;
+        font-family: "Joystix";
+        color: rgb(0 0 0);
+      }
+      h2 {
+        font-size: 1.9rem;
+        line-height: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <div class="image">
+          <img src="assets/img/rowdy-rabouw-2025.jpg" alt="Rowdy Rabouw" />
+          <svg
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            viewBox="0 0 850.4 850.4"
+          >
+            <defs>
+              <style>
+                .st0 {
+                  fill: #fdb814;
+                }
+              </style>
+              <linearGradient
+                id="linear-gradient"
+                x1="67.1"
+                y1="426.8"
+                x2="783.34"
+                y2="426.8"
+                gradientTransform="translate(850.44 852) rotate(-180)"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#ffc70c" />
+                <stop offset="1" stop-color="#fbac18" />
+              </linearGradient>
+            </defs>
+            <path
+              class="st0"
+              d="M0,0 L850.4,0 L850.4,850.4 L0,850.4 Z M67.14,419.4c-3.1,207.5,167.1,380.5,374.6,380.5,151.9,0,282.6-90.3,341.5-220.1l-298.9-127.2c-24.2-10.3-24.1-44.5,0-54.8l299-126.9c-58.7-130-189.6-220.4-341.5-220.4S70.24,215.2,67.14,419.4h0Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <h1>rowdy rabouw</h1>
+        <h2>webmaster since 1996</h2>
+        <h2>Front-End Focused Senior DevOps Engineer</h2>
+        <h2>usability and accessibility</h2>
+        <h2>Google Developer Expert in Web Technologies</h2>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigating the HTML and CSS maze</title>
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="module" src="assets/js/script.js" defer></script>
+    <style>
+      .logo {
+        margin-bottom: 200px;
+        img {
+          display: block;
+          width: 80vw;
+          height: auto;
+          margin: 0 auto;
+        }
+      }
+      .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: rgb(255 255 255);
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 1.5;
+
+        img {
+          display: block;
+          width: 200px;
+          height: auto;
+          margin: 0 auto;
+          margin-block-end: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="logo">
+        <img src="assets/img/baseline-wordmark-dark.svg" alt="Baseline" />
+      </div>
+      <div class="icons">
+        <div>
+          <img
+            src="assets/img/baseline-limited-icon-dark.svg"
+            alt="Baseline Limited Availability"
+          />
+          <span>Limited Availability</span>
+        </div>
+        <div>
+          <img
+            src="assets/img/baseline-newly-icon-dark.svg"
+            alt="Baseline Newly Available"
+          />
+          <span>Newly Available</span>
+        </div>
+        <div>
+          <img
+            src="assets/img/baseline-widely-icon-dark.svg"
+            alt="Baseline Widely Available"
+          />
+          <span>Widely Available<br /><span id="date"></span></span>
+        </div>
+      </div>
+    </main>
+    <script>
+      const currentDate = new Date();
+      const currentMonth = currentDate.getMonth();
+      currentDate.setMonth(currentMonth - 30);
+      const displayDate = new Intl.DateTimeFormat("en-GB", {
+        dateStyle: "full",
+      }).format(currentDate);
+      document.querySelector("#date").textContent = displayDate;
+    </script>
+  </body>
+</html>

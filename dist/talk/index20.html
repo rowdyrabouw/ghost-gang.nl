@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigating the HTML and CSS maze</title>
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="module" src="assets/js/script.js" defer></script>
+    <style>
+      body {
+        background-color: #fdb814;
+        background-color: rgb(0 0 0);
+        color: rgb(255 255 255);
+        font-family: "Joystix";
+      }
+      main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        & > div {
+          align-content: center;
+        }
+      }
+      div.image {
+        position: relative;
+        width: 700px;
+        height: 700px;
+        margin-inline-start: -50px;
+        background-image: url("assets/img/qr.svg");
+        background-size: 100px;
+        background-position: center center;
+        margin-inline-end: 2rem;
+      }
+      img {
+        display: block;
+        width: 95%;
+        height: auto;
+        position: absolute;
+
+        svg {
+          position: absolute;
+        }
+      }
+      h1 {
+        font-size: 3.25rem;
+        text-shadow: none;
+        font-family: "Joystix";
+        color: rgb(255 255 255);
+        margin-block-end: 3rem;
+      }
+      h2 {
+        font-size: 2rem;
+        line-height: 2;
+        margin-block-end: 4rem;
+      }
+      div.social {
+        margin-top: 2rem;
+        color: rgb(255 255 255);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.75rem;
+        svg {
+          width: 40px;
+        }
+      }
+      .at {
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <audio id="audio" src="assets/mp3/end.mp3" autoplay></audio>
+      <div>
+        <div class="image">
+          <svg
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 850.4 850.4"
+          >
+            <defs>
+              <style>
+                .st2g {
+                  fill: transparentrgb(0 0 0);
+                }
+                .background {
+                  fill: transparent;
+                }
+              </style>
+            </defs>
+            <rect class="background" width="100%" height="100%" />
+            <g transform="scale(-1, 1) translate(-850.4, 0)">
+              <path
+                class="st2g"
+                fill-rule="evenodd"
+                d="M0 0h850.4v850.4H0V0ZM791,515.9v-110.8c0-202-163.8-365.8-365.8-365.8h0c-202,0-365.8,163.8-365.8,365.8v372.5c0,29,38.4,44.7,63.9,14,12.5-19.9,40.6-65.7,68.3-64.4,27.7,1.3,49.7,38.5,60.5,52.3,10.8,13.8,30.7,32.9,60.1,31.6,29.4-1.3,47.6-32.4,72.2-61,21.2-24.2,57.9-34.6,85.2,7.4,27.2,41.9,46.7,52.8,76.5,52.8s50.6-29.8,70.1-58.4c13.4-19,55.3-39.3,80.4-2.6,25.1,36.8,39.8,61.5,63.1,61.9,23.4.4,31.2-24.3,31.2-35.5,0-12.6,0-259.7,0-259.7ZM184.6,388.8c0-51.8,42.8-93.8,95.5-93.8s95.5,42,95.5,93.8-42.8,93.8-95.5,93.8-95.5-42-95.5-93.8ZM594.3,601.7c-6.7-1.8-35.5,22.7-62.5,18.8-27-3.9-34.1-24.5-54.7-24.1-20.6.4-45.4,28.4-66.7,26.3-21.3-2.1-41.2-25.6-54.3-25.9-13.1-.4-46.1,29-72,26-22.8-2.6-36.7-20.1-48.3-20.3-6.5-.1-18.7,13.5-33.5,2.1-14.8-11.4-19.6-56.4,27.5-54.7,25,0,45.9,25.8,61,27.4,12.9,1.3,44.7-26.3,66-27.3s43.3,28.7,59.6,29.1,40.1-28.8,63.9-29.1c23.8-.3,35.8,26.3,60,27.4,24.1,1.1,40.8-34.8,78.4-20.2,31.9,16,5.7,67.4-24.5,44.7ZM542.2,482.6c-52.8,0-95.5-42-95.5-93.8s42.8-93.8,95.5-93.8,95.5,42,95.5,93.8-42.8,93.8-95.5,93.8Z"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div>
+        <h1>Thank you very much !</h1>
+        <h2>rowdy.codes/wordcamp</h2>
+        <div class="social">
+          <svg
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <title>Bluesky</title>
+            <path
+              d="m64 32c-35.3 0-64 28.7-64 64v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64v-320c0-35.3-28.7-64-64-64zm160 215.4c14.5-30 54-85.8 90.7-113.3 26.5-19.9 69.3-35.2 69.3 13.7 0 9.8-5.6 82.1-8.9 93.8-11.4 40.8-53 51.2-90 44.9 64.7 11 81.2 47.5 45.6 84-67.5 69.3-97-17.4-104.6-39.6l-.3-.9c-.9-2.6-1.4-4.1-1.8-4.1s-.9 1.5-1.8 4.1c-.1.3-.2.6-.3.9-7.6 22.2-37.1 108.8-104.6 39.6-35.5-36.5-19.1-73 45.6-84-37 6.3-78.6-4.1-90-44.9-3.3-11.7-8.9-84-8.9-93.8 0-48.9 42.9-33.5 69.3-13.7 36.7 27.5 76.2 83.4 90.7 113.3z"
+              fill="currentColor"
+            />
+          </svg>
+          <span>rowdy.codes</span>
+        </div>
+        <div class="social">
+          <svg
+            class="custom mastodon"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <title>Mastodon</title>
+            <path
+              fill="#fff"
+              d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"
+              fill="currentColor"
+            />
+          </svg>
+          <span>mastodon.social / <span class="at">@</span>rowdy</span>
+        </div>
+        <div class="social">
+          <svg
+            role="img"
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>X</title>
+            <path
+              d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"
+              fill="currentColor"
+            />
+          </svg>
+          <span>rowdyrabouw</span>
+        </div>
+        <div class="social">
+          <svg
+            role="img"
+            viewbox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>LinkedIn</title>
+            <path
+              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+              fill="currentColor"
+            ></path>
+          </svg>
+          <span>rowdyrabouw</span>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
