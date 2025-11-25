@@ -11,6 +11,7 @@ export const headerData = {
     { name: "crossDocumentViewTransitions", pages: 12 },
     { name: "dialog", pages: 5 },
     { name: "fieldSizing", pages: 4 },
+    { name: "lang", pages: 3 },
     { name: "mediaQueriesRangeSyntax", pages: 2 },
     { name: "mutuallyExclusiveDetailsElements", pages: 3 },
     { name: "nesting", pages: 4 },
@@ -21,6 +22,11 @@ export const headerData = {
     { name: "textWrap", pages: 1 },
   ],
   features: {
+    lang: {
+      title: "lang",
+      description:
+        "The lang attribute in HTML specifies the language of the element's content, helping browsers and assistive technologies to render and pronounce the text correctly.",
+    },
     function: {
       title: "function",
       description:

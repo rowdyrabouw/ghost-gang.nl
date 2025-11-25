@@ -1,0 +1,60 @@
+main {
+  margin: 0 auto;
+  font-family: "Joystix";
+
+  > div {
+    font-size: 2rem;
+    display: flex;
+    gap: 4rem;
+    align-content: center;
+  }
+}
+div.code {
+  display: flex;
+  flex-direction: column;
+}
+div.ghosts {
+  align-content: center;
+}
+
+.ghost {
+  display: grid;
+  grid-template-columns: 60px 300px 200px;
+  gap: 16px;
+  align-items: center;
+  margin-block-end: 16px;
+  color: #dedeff;
+  width: 700px;
+  blockquote {
+    margin: 0;
+  }
+  span {
+    display: block;
+  }
+  svg {
+    display: block;
+    width: 50px;
+  }
+}
+.blinky {
+  color: #ff0000;
+}
+.pinky {
+  color: #ffb8ff;
+}
+.inky {
+  color: #03ffff;
+}
+.clyde {
+  color: #ffb851;
+}
+.explanation {
+  position: absolute;
+  bottom: 100px;
+  right: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  color: #888888;
+  text-align: right;
+  line-height: 1.5;
+}
