@@ -11,7 +11,3 @@ body {
 main {
   align-content: center;
 }
-
-@view-transition {
-  navigation: auto;
-}

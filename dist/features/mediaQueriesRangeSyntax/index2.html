@@ -7,6 +7,11 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+    </style>
   </head>
   <body>
     <gg-header feature="mediaQueriesRangeSyntax" page="2"></gg-header>
@@ -35,15 +40,9 @@
     </code></pre>
     </main>
 
-    <gg-baseline feature="mediaQueriesRangeSyntax"></gg-baseline>
-
-    <a
-      href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Using"
-      target="_blank"
-      class="mdn"
-    >
-      <img src="/assets/img/cherry.svg" alt="" />
-      <span class="sr-only">MDN Documentation</span>
-    </a>
+    <gg-baseline
+      feature="mediaQueriesRangeSyntax"
+      info="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Using"
+    ></gg-baseline>
   </body>
 </html>

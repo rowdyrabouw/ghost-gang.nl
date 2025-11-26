@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
     <style>
+      @view-transition {
+        navigation: auto;
+      }
       main {
         display: flex;
         gap: 4rem;
@@ -110,7 +113,10 @@ p {
 
     <div>
       <gg-baseline feature="textWrapBalance"></gg-baseline>
-      <gg-baseline feature="textWrapPretty"></gg-baseline>
+      <gg-baseline
+        feature="textWrapPretty"
+        info="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-wrap"
+      ></gg-baseline>
     </div>
   </body>
 </html>

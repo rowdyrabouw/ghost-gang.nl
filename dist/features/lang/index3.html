@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
     <style>
-        blockquote::before {
+      @view-transition {
+        navigation: auto;
+      }
+      blockquote::before {
         content: open-quote;
         font-family: Times, "Courier New", Courier, monospace;
         margin-inline-end: 0.25em;
@@ -20,7 +23,6 @@
         font-family: Times,"Courier New", Courier, monospace;
         margin-inline-start: 0.25em;
       }
-
     </style>
   </head>
   <body>
@@ -291,6 +293,6 @@ blockquote::after {
           guillemets (sideways double chevrons)
         </div>
 
-    <gg-baseline feature="lang"></gg-baseline>
+    <gg-baseline feature="lang" info="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/lang"></gg-baseline>
   </body>
 </html>

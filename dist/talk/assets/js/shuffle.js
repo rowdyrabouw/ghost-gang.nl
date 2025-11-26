@@ -23,5 +23,5 @@ if (headerData.navigation.length > 0) {
   const firstItem = headerData.navigation[0];
   setTimeout(() => {
     window.location.href = `/features/${firstItem.name}/index1.html?talk=true`;
-  }, 6200);
+  }, 6000);
 }

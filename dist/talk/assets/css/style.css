@@ -1,7 +1,3 @@
-@view-transition {
-  navigation: auto;
-}
-
 @font-face {
   font-family: "Namco";
   src: url("../../../assets/fonts/namco.woff2") format("woff2");

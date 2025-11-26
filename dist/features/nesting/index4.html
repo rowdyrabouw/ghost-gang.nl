@@ -7,6 +7,11 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+    </style>
   </head>
   <body>
     <gg-header feature="nesting" page="4"></gg-header>
@@ -39,6 +44,9 @@
 </code></pre>
     </main>
 
-    <gg-baseline feature="nesting"></gg-baseline>
+    <gg-baseline
+      feature="nesting"
+      info="https://web.dev/learn/css/nesting"
+    ></gg-baseline>
   </body>
 </html>

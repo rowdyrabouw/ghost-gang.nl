@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
     <style>
+      @view-transition {
+        navigation: auto;
+      }
       main {
         margin: 0 auto;
         align-content: normal;
@@ -113,15 +116,6 @@
       </div>
     </main>
 
-    <gg-baseline feature="mutuallyExclusiveDetailsElements"></gg-baseline>
-
-      <a
-      href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details"
-      target="_blank"
-      class="mdn"
-    >
-      <img src="/assets/img/cherry.svg" alt="" />
-      <span class="sr-only">MDN Documentation</span>
-    </a>
+    <gg-baseline feature="mutuallyExclusiveDetailsElements" info="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details"></gg-baseline>
   </body>
 </html>

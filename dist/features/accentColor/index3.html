@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
     <style>
+      @view-transition {
+        navigation: auto;
+      }
+
       :root {
         accent-color: var(--accent, hsl(174 38% 64%));
       }
@@ -42,16 +46,10 @@
       </div>
     </main>
 
-    <gg-baseline feature="accentColor"></gg-baseline>
-
-    <a
-      href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/accent-color"
-      target="_blank"
-      class="mdn"
-    >
-      <img src="/assets/img/cherry.svg" alt="" />
-      <span class="sr-only">MDN documentation</span>
-    </a>
+    <gg-baseline
+      feature="accentColor"
+      info="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/accent-color"
+    ></gg-baseline>
 
     <script>
       accent.oninput = (e) =>

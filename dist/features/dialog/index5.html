@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
     <style>
+      @view-transition {
+        navigation: auto;
+      }
       dialog {
         padding: 1.5rem;
         & button {
@@ -109,15 +112,9 @@ dialog.addEventListener("close", () => {
       });
     </script>
 
-    <gg-baseline feature="dialog"></gg-baseline>
-
-    <a
-      href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog"
-      target="_blank"
-      class="mdn"
-    >
-      <img src="/assets/img/cherry.svg" alt="" />
-      <span class="sr-only">MDN Documentation</span>
-    </a>
+    <gg-baseline
+      feature="dialog"
+      info="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog"
+    ></gg-baseline>
   </body>
 </html>

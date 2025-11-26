@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
     <style>
+      @view-transition {
+        navigation: auto;
+      }
       main {
         .container {
           display: flex;
@@ -119,15 +122,9 @@
       </div>
     </main>
 
-    <gg-baseline feature="backdropFilter"></gg-baseline>
-
-    <a
-      href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter"
-      target="_blank"
-      class="mdn"
-    >
-      <img src="/assets/img/cherry.svg" alt="" />
-      <span class="sr-only">MDN documentation</span>
-    </a>
+    <gg-baseline
+      feature="backdropFilter"
+      info="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter"
+    ></gg-baseline>
   </body>
 </html>

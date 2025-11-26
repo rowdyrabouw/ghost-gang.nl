@@ -101,3 +101,9 @@
 .widely {
   background-image: url("../../img/widely.svg");
 }
+
+#time {
+  position: absolute;
+  right: 100px;
+  top: 35px;
+}

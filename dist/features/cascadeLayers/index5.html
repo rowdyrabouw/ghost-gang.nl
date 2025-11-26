@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
     <style>
+      @view-transition {
+        navigation: auto;
+      }
       main > div {
         display: flex;
         justify-content: center;
@@ -81,15 +84,9 @@
       </div>
     </main>
 
-    <gg-baseline feature="cascadeLayers"></gg-baseline>
-
-    <a
-      href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@layer"
-      target="_blank"
-      class="mdn"
-    >
-      <img src="/assets/img/cherry.svg" alt="" />
-      <span class="sr-only">MDN documentation</span>
-    </a>
+    <gg-baseline
+      feature="cascadeLayers"
+      info="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@layer"
+    ></gg-baseline>
   </body>
 </html>

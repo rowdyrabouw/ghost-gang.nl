@@ -51,7 +51,7 @@ div.ghosts {
 .explanation {
   position: absolute;
   bottom: 100px;
-  right: 40px;
+  right: 100px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
   color: #888888;

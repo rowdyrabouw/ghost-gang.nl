@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
     <style>
+      @view-transition {
+        navigation: auto;
+      }
       :root {
         color-scheme: light dark;
       }
       article {
         color: light-dark(#060606, #fdbb10);
-        background-color: light-dark(#f1f3f4, #060606);
+        background-color: light-dark(#ffb7c3, #060606);
 
         &.dark {
           color-scheme: dark;
@@ -52,7 +55,7 @@
 
 section {
   color: light-dark(#060606, #fdbb10);
-  background-color: light-dark(#f1f3f4, #060606);
+  background-color: light-dark(#ffb7c3, #060606);
   &.dark {
     color-scheme: dark;
   }
@@ -84,15 +87,9 @@ section {
       </div>
     </main>
 
-    <gg-baseline feature="colorScheme"></gg-baseline>
-
-    <a
-      href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/color-scheme"
-      target="_blank"
-      class="mdn"
-    >
-      <img src="/assets/img/cherry.svg" alt="" />
-      <span class="sr-only">MDN documentation</span>
-    </a>
+    <gg-baseline
+      feature="colorScheme"
+      info="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/color-scheme"
+    ></gg-baseline>
   </body>
 </html>

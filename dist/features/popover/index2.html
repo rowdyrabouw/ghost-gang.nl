@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
     <style>
+      @view-transition {
+        navigation: auto;
+      }
       #pacman {
         width: 440px;
         padding: 1rem;
@@ -77,15 +80,9 @@
       </div>
     </main>
 
-    <gg-baseline feature="popover"></gg-baseline>
-
-    <a
-      href="https://developer.mozilla.org/en-US/docs/Web/API/Popover_API"
-      target="_blank"
-      class="mdn"
-    >
-      <img src="/assets/img/cherry.svg" alt="" />
-      <span class="sr-only">MDN Documentation</span>
-    </a>
+    <gg-baseline
+      feature="popover"
+      info="https://developer.mozilla.org/en-US/docs/Web/API/Popover_API"
+    ></gg-baseline>
   </body>
 </html>

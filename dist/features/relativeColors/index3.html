@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
     <style>
+      @view-transition {
+        navigation: auto;
+      }
       :root {
         --hue: 0;
         --primary: oklch(70% 0.2 var(--hue));
@@ -298,15 +301,9 @@
       </script>
     </main>
 
-    <gg-baseline feature="relativeColors"></gg-baseline>
-
-    <a
-      href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Colors/Using_relative_colors"
-      target="_blank"
-      class="mdn"
-    >
-      <img src="/assets/img/cherry.svg" alt="" />
-      <span class="sr-only">MDN Documentation</span>
-    </a>
+    <gg-baseline
+      feature="relativeColors"
+      info="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Colors/Using_relative_colors"
+    ></gg-baseline>
   </body>
 </html>

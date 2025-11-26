@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script type="module" src="/assets/js/script.js" defer></script>
     <style>
+      @view-transition {
+        navigation: auto;
+      }
       main {
         margin: 0 auto;
       }
@@ -102,16 +105,10 @@ img {
       <p id="svgSize"></p>
     </main>
 
-    <gg-baseline feature="containerQueries"></gg-baseline>
-
-    <a
-      href="https://ishadeed.com/article/css-container-query-guide/#container-query-units"
-      target="_blank"
-      class="mdn"
-    >
-      <img src="/assets/img/cherry.svg" alt="" />
-      <span class="sr-only">An Interactive Guide to CSS Container Queries</span>
-    </a>
+    <gg-baseline
+      feature="containerQueries"
+      info="https://ishadeed.com/article/css-container-query-guide/#container-query-units"
+    ></gg-baseline>
 
     <script>
       const heading = document.querySelector("h2");

@@ -7,7 +7,7 @@ export class Baseline extends HTMLElement {
   }
 
   static get observedAttributes() {
-    return ["feature"];
+    return ["feature", "info"];
   }
 
   async connectedCallback() {
@@ -23,6 +23,7 @@ export class Baseline extends HTMLElement {
   render() {
     const feature = this.getAttribute("feature");
     const featureData = this.data && this.data[feature];
+    const info = this.getAttribute("info");
 
     const options = {
       year: "numeric",
@@ -60,7 +61,18 @@ export class Baseline extends HTMLElement {
             (level) => level.status === featureData.status
           ).text
         : "unknown";
-      this.innerHTML = `<footer><ul class="support"><li class="baseline ${featureData.status}">${availability}</li>${supportHTML}</ul></footer>`;
+      let extraInfo = "";
+      if (info) {
+        extraInfo = `<a
+      href="${info}"
+      target="_blank"
+      class="documentation"
+    >
+      <img src="/assets/img/cherry.svg" alt="" />
+      <span class="sr-only">Documentation (opens in new window)</span>
+    </a>`;
+      }
+      this.innerHTML = `<footer><ul class="support"><li class="baseline ${featureData.status}">${availability}</li>${supportHTML}</ul></footer>${extraInfo}`;
     }
   }
 }
