@@ -1,10 +1,18 @@
 import { headerData } from "./data/header.js";
+import CountdownTimer from "./timer.js";
 
 export class Header extends HTMLElement {
   constructor() {
     super();
+
     this.data =
       JSON.parse(localStorage.getItem("shuffledHeaderData")) || headerData;
+
+    const page = this.getAttribute("page");
+    if (window.location.search) {
+      const timer = new CountdownTimer();
+      timer.init(page === "1");
+    }
   }
 
   static get observedAttributes() {
@@ -75,6 +83,10 @@ export class Header extends HTMLElement {
     for (let i = currentIndex + 1; i <= navigationData.length; i++) {
       dots += "<span class='dot yellow'></span>";
     }
-    this.innerHTML = `<header>${previousLink}<h1>${featureData.title}</h1>${nextLink}</header><div class="dots">${dots}</div>`;
+    let timer = "";
+    if (window.location.search) {
+      timer = `<div id="time">0:00</div>`;
+    }
+    this.innerHTML = `${timer}<header>${previousLink}<h1>${featureData.title}</h1>${nextLink}</header><div class="dots">${dots}</div>`;
   }
 }
