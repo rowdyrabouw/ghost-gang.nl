@@ -78,6 +78,7 @@ window.addEventListener("load", () => {
     const { button, pressed } = event.detail;
     if (button === 2 && pressed) {
       log("Fire!");
+      window.location.href = `/talk/index19.html?talk=true`;
     }
   });
 
