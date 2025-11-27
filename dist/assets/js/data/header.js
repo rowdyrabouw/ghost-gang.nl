@@ -8,7 +8,7 @@ export const headerData = {
     { name: "colorScheme", pages: 4 },
     { name: "colorSpaces", pages: 3 },
     { name: "containerQueries", pages: 4 },
-    { name: "crossDocumentViewTransitions", pages: 12 },
+    { name: "crossDocumentViewTransitions", pages: 13 },
     { name: "dialog", pages: 5 },
     { name: "fieldSizing", pages: 4 },
     { name: "lang", pages: 3 },

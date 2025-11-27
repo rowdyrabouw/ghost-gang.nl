@@ -11,35 +11,43 @@
       @view-transition {
         navigation: auto;
       }
+      main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      main > img {
+        margin: 0 auto;
+        display: block;
+        width: 100px;
+      }
     </style>
   </head>
   <body>
     <gg-header feature="crossDocumentViewTransitions" page="12"></gg-header>
 
     <main>
-      <pre class="hide"><code class="language-css">
-@view-transition {
-  navigation: auto;
-}
-
-img.blinky {        
-  view-transition-name: blinky;
-}
-
-img.pinky {        
-  view-transition-name: pinky;
-}
-
-img.inky {        
-  view-transition-name: inky;
-}
-
-img.clyde {        
-  view-transition-name: clyde;
-}
-      </code></pre>
+      <img
+        src="/assets/img/clyde.svg"
+        alt="Clyde"
+        style="view-transition-name: clyde"
+      />
+      <img
+        src="/assets/img/inky-left.svg"
+        alt="Inky"
+        style="view-transition-name: inky"
+      />
+      <img
+        src="/assets/img/pinky-right.svg"
+        alt="Pinky"
+        style="view-transition-name: pinky"
+      />
+      <img
+        src="/assets/img/blinky-right.svg"
+        alt="Blinky"
+        style="view-transition-name: blinky"
+      />
     </main>
 
-    <gg-baseline feature="crossDocumentViewTransitions" info="href="https://view-transitions.chrome.dev"></gg-baseline>
+    <gg-baseline feature="crossDocumentViewTransitions"></gg-baseline>
   </body>
 </html>

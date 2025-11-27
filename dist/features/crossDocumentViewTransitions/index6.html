@@ -11,12 +11,19 @@
       @view-transition {
         navigation: auto;
       }
+      main > img {
+        margin: 0 auto;
+        display: block;
+        width: 400px;
+      }
     </style>
   </head>
   <body>
     <gg-header feature="crossDocumentViewTransitions" page="6"></gg-header>
 
-    <main></main>
+    <main>
+      <img src="/assets/img/inky-right.svg" alt="Blinky" />
+    </main>
 
     <gg-baseline feature="crossDocumentViewTransitions"></gg-baseline>
   </body>

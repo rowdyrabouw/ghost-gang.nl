@@ -14,16 +14,32 @@
     </style>
   </head>
   <body>
-    <gg-header feature="crossDocumentViewTransitions" page="4"></gg-header>
+    <gg-header feature="crossDocumentViewTransitions" page="13"></gg-header>
 
     <main>
       <pre class="hide"><code class="language-css">
 @view-transition {
   navigation: auto;
 }
+
+img.blinky {        
+  view-transition-name: blinky;
+}
+
+img.pinky {        
+  view-transition-name: pinky;
+}
+
+img.inky {        
+  view-transition-name: inky;
+}
+
+img.clyde {        
+  view-transition-name: clyde;
+}
       </code></pre>
     </main>
 
-    <gg-baseline feature="crossDocumentViewTransitions"></gg-baseline>
+    <gg-baseline feature="crossDocumentViewTransitions" info="href="https://view-transitions.chrome.dev"></gg-baseline>
   </body>
 </html>
