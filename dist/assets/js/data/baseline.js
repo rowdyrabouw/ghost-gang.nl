@@ -562,7 +562,7 @@ export const baselineData = {
     },
   },
   colorMix: {
-    status: "newly",
+    status: "widely",
     name: "color-mix()",
     support: {
       chrome: {
@@ -610,7 +610,7 @@ export const baselineData = {
     },
   },
   colorSpaces: {
-    status: "newly",
+    status: "widely",
     name: "Color Spaces",
     support: {
       chrome: {
@@ -881,16 +881,20 @@ export const baselineData = {
       },
       safari: {
         name: "Safari",
-        level: "no",
+        level: "full",
+        version: "26.2",
+        date: "2025-12-12",
       },
       safariIOS: {
         name: "Safari iOS",
-        level: "no",
+        level: "full",
+        version: "26.2",
+        date: "2025-12-12",
       },
     },
   },
   nesting: {
-    status: "newly",
+    status: "widely",
     name: "Nesting",
     support: {
       chrome: {
@@ -986,7 +990,7 @@ export const baselineData = {
     },
   },
   anchorPositioning: {
-    status: "limited",
+    status: "newly",
     name: "Anchor Positioning",
     support: {
       chrome: {
@@ -1009,11 +1013,15 @@ export const baselineData = {
       },
       firefox: {
         name: "Firefox",
-        level: "no",
+        level: "full",
+        version: 147,
+        date: "2026-01-13",
       },
       firefoxAndroid: {
         name: "Firefox Android",
-        level: "no",
+        level: "full",
+        version: 147,
+        date: "2026-01-13",
       },
       safari: {
         name: "Safari",
