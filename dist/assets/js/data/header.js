@@ -5,7 +5,7 @@ export const headerData = {
     { name: "backdropFilter", pages: 3 },
     { name: "cascadeLayers", pages: 5 },
     { name: "colorMix", pages: 2 },
-    { name: "colorScheme", pages: 4 },
+    { name: "colorScheme", pages: 5 },
     { name: "colorSpaces", pages: 3 },
     { name: "containerQueries", pages: 4 },
     { name: "crossDocumentViewTransitions", pages: 13 },

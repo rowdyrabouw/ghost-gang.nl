@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Ghost Gang</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script type="module" src="/assets/js/script.js" defer></script>
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+      main {
+        background-image: url(toru-dark.jpg);
+        background-image: light-dark(url(toru-light.jpg), url(toru-dark.jpg));
+        background-size: auto 70%;
+        background-position: top center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-block-end: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <gg-header feature="colorScheme" page="5"></gg-header>
+
+    <main>
+      <pre class="hide"><code class="language-css">
+main {
+  background-image: url(toru-dark.jpg);
+  background-image: light-dark(url(toru-light.jpg), url(toru-dark.jpg));
+}
+      </code></pre>
+    </main>
+
+    <gg-baseline feature="colorSchemeImage"></gg-baseline>
+  </body>
+</html>

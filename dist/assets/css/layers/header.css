@@ -9,6 +9,7 @@
   margin: 0 8px;
   display: inline-block;
   border-radius: 3px;
+  border: 1px solid #060606;
 }
 .dot.black {
   background-color: light-dark(#ffffff, #323131);
@@ -16,4 +17,8 @@
 
 .dot.yellow {
   background-color: #ffa202;
+}
+
+a img {
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }

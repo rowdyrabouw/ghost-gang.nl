@@ -1037,4 +1037,46 @@ export const baselineData = {
       },
     },
   },
+  colorSchemeImage: {
+    status: "limited",
+    name: "color-scheme",
+    support: {
+      chrome: {
+        name: "Chrome",
+        level: "full",
+        version: 150,
+        date: "2026-06-17",
+      },
+      chromeAndroid: {
+        name: "Chrome Android",
+        level: "full",
+        version: 150,
+        date: "2026-06-17",
+      },
+      edge: {
+        name: "Edge",
+        level: "no",
+      },
+      firefox: {
+        name: "Firefox",
+        level: "full",
+        version: 150,
+        date: "2026-04-21",
+      },
+      firefoxAndroid: {
+        name: "Firefox Android",
+        level: "full",
+        version: 150,
+        date: "2026-04-21",
+      },
+      safari: {
+        name: "Safari",
+        level: "no",
+      },
+      safariIOS: {
+        name: "Safari iOS",
+        level: "no",
+      },
+    },
+  },
 };
