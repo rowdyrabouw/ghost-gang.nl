@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,10 +12,19 @@
         navigation: auto;
       }
       body {
+        animation: colorTransition 3s ease-in-out forwards;
         background-image: url("/assets/img/pacman.svg");
         background-size: auto 95%;
         background-position: center center;
         background-repeat: no-repeat;
+      }
+      @keyframes colorTransition {
+        from {
+          background-color: #fbae19;
+        }
+        to {
+          background-color: #000000;
+        }
       }
     </style>
   </head>
