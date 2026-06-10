@@ -1079,4 +1079,86 @@ export const baselineData = {
       },
     },
   },
+  dialogCommandFor: {
+    status: "newly",
+    name: "dialogCommandFor",
+    support: {
+      chrome: {
+        name: "Chrome",
+        level: "full",
+        version: 135,
+        date: "2025-04-01",
+      },
+      chromeAndroid: {
+        name: "Chrome Android",
+        level: "full",
+        version: 148,
+        date: "2026-05-05",
+      },
+      edge: {
+        name: "Edge",
+        level: "full",
+        version: 135,
+        date: "2025-04-07",
+      },
+      firefox: {
+        name: "Firefox",
+        level: "full",
+        version: 144,
+        date: "2025-10-14",
+      },
+      firefoxAndroid: {
+        name: "Firefox Android",
+        level: "full",
+        version: 150,
+        date: "2026-04-21",
+      },
+      safari: {
+        name: "Safari",
+        level: "full",
+        version: 26.2,
+        date: "2025-11-02",
+      },
+      safariIOS: {
+        name: "Safari iOS",
+        level: "full",
+        version: 26.2,
+        date: "2025-12-12",
+      },
+    },
+  },
+  mixin: {
+    status: "limited",
+    name: "Field Sizing",
+    support: {
+      chrome: {
+        name: "Chrome",
+        level: "no",
+      },
+      chromeAndroid: {
+        name: "Chrome Android",
+        level: "no",
+      },
+      edge: {
+        name: "Edge",
+        level: "no",
+      },
+      firefox: {
+        name: "Firefox",
+        level: "no",
+      },
+      firefoxAndroid: {
+        name: "Firefox Android",
+        level: "no",
+      },
+      safari: {
+        name: "Safari",
+        level: "no",
+      },
+      safariIOS: {
+        name: "Safari iOS",
+        level: "no",
+      },
+    },
+  },
 };
