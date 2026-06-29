@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <title>Ghost Gang</title>
@@ -18,11 +18,7 @@
       }
 
       main {
-        background: radial-gradient(
-          circle at center,
-          var(--primary-highlight),
-          var(--primary)
-        );
+        background: radial-gradient(circle at center, var(--primary-highlight), var(--primary));
       }
 
       input[type="range"] {
@@ -34,13 +30,7 @@
       }
 
       .pacman {
-        --color: oklch(
-          from var(--primary) /* decrease lightness as list grows */
-            calc(l - (var(--i) * 0.05)) /* decrease chroma as list grows */
-            calc(c - (var(--i) * 0.01))
-            /* lightly rotate the hue as the list grows */
-            calc(h - (var(--i) + 5))
-        );
+        --color: oklch(from var(--primary) /* decrease lightness as list grows */ calc(l - (var(--i) * 0.09)) /* decrease chroma as list grows */ calc(c - (var(--i) * 0.02)) /* lightly rotate the hue as the list grows */ calc(h - (var(--i) + 2)));
         color: var(--color);
       }
 
@@ -62,13 +52,7 @@
     <main>
       <div class="pacmans">
         <span class="pacman" style="--i: 1">
-          <svg
-            id="Layer_1"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 850.4 850.4"
-          >
+          <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 850.4 850.4">
             <defs>
               <style>
                 .st0g {
@@ -86,13 +70,7 @@
                 }
               </style>
             </defs>
-            <rect
-              class="st0g"
-              x="158.6"
-              y="521.3"
-              width="543.2"
-              height="122.1"
-            />
+            <rect class="st0g" x="158.6" y="521.3" width="543.2" height="122.1" />
             <ellipse class="st0g" cx="264.9" cy="385.5" rx="130.5" ry="124.2" />
             <ellipse class="st0g" cx="560.9" cy="385.5" rx="130.5" ry="124.2" />
             <g>
@@ -108,13 +86,7 @@
           </svg>
         </span>
         <span class="pacman" style="--i: 2">
-          <svg
-            id="Layer_1"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 850.4 850.4"
-          >
+          <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 850.4 850.4">
             <defs>
               <style>
                 .st0g {
@@ -132,13 +104,7 @@
                 }
               </style>
             </defs>
-            <rect
-              class="st0g"
-              x="158.6"
-              y="521.3"
-              width="543.2"
-              height="122.1"
-            />
+            <rect class="st0g" x="158.6" y="521.3" width="543.2" height="122.1" />
             <ellipse class="st0g" cx="264.9" cy="385.5" rx="130.5" ry="124.2" />
             <ellipse class="st0g" cx="560.9" cy="385.5" rx="130.5" ry="124.2" />
             <g>
@@ -154,13 +120,7 @@
           </svg>
         </span>
         <span class="pacman" style="--i: 3">
-          <svg
-            id="Layer_1"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 850.4 850.4"
-          >
+          <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 850.4 850.4">
             <defs>
               <style>
                 .st0g {
@@ -178,13 +138,7 @@
                 }
               </style>
             </defs>
-            <rect
-              class="st0g"
-              x="158.6"
-              y="521.3"
-              width="543.2"
-              height="122.1"
-            />
+            <rect class="st0g" x="158.6" y="521.3" width="543.2" height="122.1" />
             <ellipse class="st0g" cx="264.9" cy="385.5" rx="130.5" ry="124.2" />
             <ellipse class="st0g" cx="560.9" cy="385.5" rx="130.5" ry="124.2" />
             <g>
@@ -200,13 +154,7 @@
           </svg>
         </span>
         <span class="pacman" style="--i: 4">
-          <svg
-            id="Layer_1"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 850.4 850.4"
-          >
+          <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 850.4 850.4">
             <defs>
               <style>
                 .st0g {
@@ -224,13 +172,7 @@
                 }
               </style>
             </defs>
-            <rect
-              class="st0g"
-              x="158.6"
-              y="521.3"
-              width="543.2"
-              height="122.1"
-            />
+            <rect class="st0g" x="158.6" y="521.3" width="543.2" height="122.1" />
             <ellipse class="st0g" cx="264.9" cy="385.5" rx="130.5" ry="124.2" />
             <ellipse class="st0g" cx="560.9" cy="385.5" rx="130.5" ry="124.2" />
             <g>
@@ -246,13 +188,7 @@
           </svg>
         </span>
         <span class="pacman" style="--i: 5">
-          <svg
-            id="Layer_1"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 850.4 850.4"
-          >
+          <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 850.4 850.4">
             <defs>
               <style>
                 .st0g {
@@ -270,13 +206,7 @@
                 }
               </style>
             </defs>
-            <rect
-              class="st0g"
-              x="158.6"
-              y="521.3"
-              width="543.2"
-              height="122.1"
-            />
+            <rect class="st0g" x="158.6" y="521.3" width="543.2" height="122.1" />
             <ellipse class="st0g" cx="264.9" cy="385.5" rx="130.5" ry="124.2" />
             <ellipse class="st0g" cx="560.9" cy="385.5" rx="130.5" ry="124.2" />
             <g>
@@ -301,9 +231,6 @@
       </script>
     </main>
 
-    <gg-baseline
-      feature="relativeColors"
-      info="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Colors/Using_relative_colors"
-    ></gg-baseline>
+    <gg-baseline feature="relativeColors" info="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Colors/Using_relative_colors"></gg-baseline>
   </body>
 </html>
