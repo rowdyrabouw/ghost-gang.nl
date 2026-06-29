@@ -1,6 +1,6 @@
 class CountdownTimer {
   constructor() {
-    this.minutes = 2;
+    this.minutes = 2.5;
     this.secondsRemaining = 0;
     this.intervalHandle = null;
   }
