@@ -7,7 +7,9 @@ const currentIndex = parseInt(filename.split("index")[1].split(".")[0], 10);
 document.addEventListener("keydown", (e) => {
   if (e.key === "ArrowRight") {
     const nextIndex = currentIndex + 1;
-    window.location.href = `/talk/index${nextIndex}.html?talk=true`;
+    if (nextIndex <= 20) {
+      window.location.href = `/talk/index${nextIndex}.html?talk=true`;
+    }
   } else if (e.key === "ArrowLeft" && currentIndex > 1) {
     const prevIndex = currentIndex - 1;
     window.location.href = `/talk/index${prevIndex}.html?talk=true`;
@@ -48,7 +50,9 @@ window.addEventListener("load", () => {
     if (axis === 0 && value === 1) {
       log("Move Right");
       const nextIndex = currentIndex + 1;
-      window.location.href = `/talk/index${nextIndex}.html?talk=true`;
+      if (nextIndex <= 20) {
+        window.location.href = `/talk/index${nextIndex}.html?talk=true`;
+      }
     }
     if (axis === 0 && value === -1 && currentIndex > 1) {
       log("Move Left");
